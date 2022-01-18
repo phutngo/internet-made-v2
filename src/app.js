@@ -11,11 +11,13 @@ import Ticker from './components/Ticker/Ticker';
 import Types from './components/Types/Types';
 import Xoxo from './components/Xoxo/Xoxo';
 import Footer from './components/Footer/Footer';
+import ImNFT from './components/ImNFT/ImNFT';
 
 const App = () => {
     return (
         <Route path="/">
             <Hero />
+            <ImNFT />
             <Xoxo />
             <Avatars />
             <Presentation />

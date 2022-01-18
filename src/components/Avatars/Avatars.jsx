@@ -13,26 +13,15 @@ export default function(){
                     <h2>8000</h2>
                 </div>
                 <p className="avatars__text">
-                    Each Internet Made Avatar is unique and randomly generated from 150 
-                    different traits, including expression, headwear, clothing, and more. 
-                    Some are rarer than others.
-                    <br/>                    
-                    <br/>                 
-                    F&amp;F (Friends &amp; Family) will have 1 free mint.
-                    <br/>                    
-                    <br/>     
-                    1 qualified Internet Made NFT gives 2 reserved opportunities 
-                    to buy into the 48 hr pre-sale.
-                    <br/>                    
-                    <br/>     
-                    The Avatars are stored as ERC-721 tokens on the Ethereum 
-                    blockchain and hosted on IPFS. (See Record and Proof.) 
-                    Purchasing an Internet Made NFT costs 0.1 ETH on presale &amp; 
-                    0.15 ETH in Public Sale.
-                    <br/>                    
-                    <br/>     
-                    To access members-only areas such as dressing room, Internet Made
-                    will need to be signed into their Metamask Wallet.
+                    To start off the Internet Made movement &amp; brand, we will be 
+                    releasing our initial collection of 9,999 IM ‘‘avatars’’ with 150+ 
+                    traits. Each one will be a unique NFT, made out of traits in different colorways, 
+                    ultimately being a 1/1 combination.
+                    <br />
+                    <br />
+                    This avatar will grant you access to our ecosystem, which will be one of a kind. 
+                    Our goal is to create the best possible experience for everyone involved - holders, 
+                    artists &amp; founders.
                 </p>
             </div>
         </div>

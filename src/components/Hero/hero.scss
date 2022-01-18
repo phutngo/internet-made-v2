@@ -4,15 +4,15 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    background: radial-gradient(44.67% 86.32% at 41.01% 100%, #8E74A6 0%, #000000 100%);
+    background: radial-gradient(44.67% 86.32% at 41.01% 100%, #47C3E7 0%, #000000 100%);
 
     @media (max-width: 991px){
         padding-bottom: 50px;
-        background: radial-gradient(76.28% 32.49% at 50% 50%, #8E74A6 0%, #000000 100%);
+        background: radial-gradient(76.28% 32.49% at 50% 50%, #47C3E7 0%, #000000 100%);
     }
 
     @media (max-width: 768px){        
-        background: radial-gradient(76.28% 32.49% at 50% 33%, #8E74A6 0%, #000000 100%);
+        background: radial-gradient(76.28% 32.49% at 50% 33%, #47C3E7 0%, #000000 100%);
     }
 }
 .hero__back{
@@ -25,6 +25,10 @@
 
     display: flex;
     align-items: flex-end;
+    
+    picture{
+        position: unset!important;
+    }
 
     .background-tree{
         width: 100%;
@@ -106,7 +110,7 @@
 
 // Hero Side
 .hero__side{
-    padding: 27px 36px;
+    padding: 27px 21px;
     background: rgba(41, 44, 52, 0.3);
     backdrop-filter: blur(44px);
     border-right: 2px solid rgba(255, 255, 255, 0.2);
@@ -131,11 +135,37 @@
     }
 }
 .hero__nav{
-    margin-top: 86px;
+    margin-top: 50px;
     writing-mode: vertical-lr;
+    max-height: 582px;
+    overflow-y: auto;
+    overflow-x:  hidden;
+    padding: 0 15px;
 
     display: flex;
     align-items: center;
+    position: relative;
+
+    &::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    // &.start::after{
+    //     background-image: linear-gradient(to Bottom, transparent 0%, transparent 90%, rgba(#fff, .25));
+    // }
+    // &.center::after{
+
+    // }
+    // &.end::after{
+
+    // }
 
     a{
         font-size: 14px;
@@ -143,16 +173,20 @@
 
         letter-spacing: 0.04em;
         text-transform: uppercase;
-
+        white-space: nowrap;
         color: #FFFFFF;
 
         opacity: 0.7;
 
-        margin: 20px 0;
+        margin: 10px 0;
 
         &.active{
             opacity: 1;
         }
+    }
+
+    &::-webkit-scrollbar{
+        display: none;
     }
 }
 

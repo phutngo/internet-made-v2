@@ -41,6 +41,13 @@ function setClassActive(index, current){
 
 export default function(){
     const [backgroundIndex, setBackgroundIndex] = useState(null);
+    const [isButtom, setIsBottom] = useState(false);
+
+    const scrollNav = (e) => {
+        console.log("scrollTop", e.target.scrollTop);
+        console.log("scrollHeight", e.target.scrollHeight);
+        console.log("height", e.target.offsetHeight);
+    };
 
     const settings = {
         slidesPerView: 3,
@@ -105,11 +112,13 @@ export default function(){
                 </header>
                 <div className="hero__side">
                     <img src={logo} alt="logo" className="hero__logo" />
-                    <nav className="hero__nav">
-                        <NavLink to="/">Home</NavLink>
-                        <NavLink to="/page1">Page 1</NavLink>
-                        <NavLink to="/page2">Page 2</NavLink>
-                        <NavLink to="/page3">Page 3</NavLink>
+                    <nav className="hero__nav start" onScroll={scrollNav}>
+                        <NavLink to="/page1">How it started</NavLink>
+                        <NavLink to="/page2">Faq</NavLink>
+                        <NavLink to="/page3">Team</NavLink>
+                        <NavLink to="/page3">Lookbook</NavLink>
+                        <NavLink to="/page3">Technical Details</NavLink>
+                        <NavLink to="/page3">Vision</NavLink>
                     </nav>
                 </div>
                 <div className="hero__info">
@@ -124,7 +133,7 @@ export default function(){
                             <img src={internetMade} alt="im" />
                         </div>
                         <p>
-                            We are a team of young creatives from diverse backgrounds, who grew up on the Internet.
+                            playing with reality
                         </p>
                     </div>
                 </div>

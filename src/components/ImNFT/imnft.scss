@@ -1,0 +1,140 @@
+@import "@root/scss/mixins.scss";
+.imnft{
+    max-width: 100%;
+    overflow: hidden;
+}
+.imnft__white{
+    display: flex;
+    background: #fff;
+    min-height: 141px;
+    width: 100%;
+    min-width: 1440px;
+
+    @media (max-width: 991px){
+        min-height: auto;
+        max-width: 100%;
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+.imnft__col{
+    display: flex;
+    align-items: center;
+
+    &.padding{
+        padding: 10px 0;
+    }
+
+    &.barcode{
+    }
+    &.center{
+        flex-grow: 1;
+    }
+    &.texture{
+    }
+
+    @media (max-width: 991px){       
+        &.barcode{
+            width: auto;
+        }
+        &.center{
+            width: auto;
+            margin-right: 30px;
+        }
+        &.texture{
+            width: auto;
+            height: auto;
+        }
+    }
+    @media (max-width: 565px){
+        &.texture{
+            max-width: 124px;
+        }
+    }
+}
+.imnft__barcode{
+    padding: 0 14px 0 20px;
+
+    img{
+        max-width: 392px;
+        width: 100%;
+    }
+
+    @media (max-width: 991px){
+        img{
+            max-width: 250px;
+        }
+    }
+    @media (max-width: 565px){
+        img{
+        }
+    }
+}
+.imnft__center{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin: 0 auto;
+
+    p{
+        max-width: 43.57%;        
+        font-size: 10.6219px;
+        line-height: 1.4;
+        letter-spacing: -0.02em;
+
+        color: #000000;
+    }
+
+    h2{
+        white-space: nowrap;
+
+        @include monument(800){
+            font-size: 45px;
+            line-height: 1.2;
+            letter-spacing: 0.08em;
+
+            color: #000000;
+        }
+    }
+
+    @media (max-width: 991px){
+        p{
+            font-size: 8px;
+            max-width: 250px;
+        }
+        h2{
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 565px){
+        p{
+            font-size: 6px;
+            max-width: 170px;
+        }
+        h2{
+            font-size: 14.5px;
+        }
+    }
+}
+.imnft__texture{
+    margin-left: auto;
+    max-width: 392px;
+    width: 100%;
+    height: 100%;
+
+    img{
+        max-width: 365px;
+        height: 100%;
+        object-fit: cover;
+        object-position: left center;
+        margin-left: auto;
+    }
+
+    @media (max-width: 991px){
+        // max-width: 175px;
+    }
+}

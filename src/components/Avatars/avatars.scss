@@ -33,11 +33,13 @@
     }
 }
 .avatars__content{
-    max-width: 448px;
+    max-width: 713px;
     width: 100%;
-    margin-right: 170px;
-    margin-left: auto;
+    margin: 0 auto;
     z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media (max-width: 1240px){
         margin-right: 80px;
@@ -62,6 +64,7 @@
     text-transform: uppercase;
     position: relative;
     width: 100%;
+    max-width: 438px;
 
     h3{
         font-size: 17.8874px;        
@@ -72,9 +75,10 @@
     }
     h2{
         font-size: 128.619px;
-        color: #B268F1;
+        color: #47C3E7;
         position: relative;
         z-index: 2;
+        line-height: 1;
     }
 
     i{
@@ -168,17 +172,19 @@
     }
 }
 .avatars__text{
+    backdrop-filter: blur(7px);
     margin-top: 29px;
-    padding: 49px 41px 40px 48px;
+    padding: 63px 80px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(@root/assets/images/avatars/background-text.png);
 
-    font-size: 12px;
-    line-height: 1.2;
+    font-size: 15px;
+    line-height: 1.4;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    text-align: center;
 
     color: #FFFFFF;
 
