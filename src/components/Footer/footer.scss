@@ -1,0 +1,18 @@
+.footer{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+.footer__copy{
+    padding: 60px 25px;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+
+    letter-spacing: -0.02em;
+
+    @media (max-width: 465px){
+        font-size: 11px;
+        padding: 39px 10px;
+    }
+}

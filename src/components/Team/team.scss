@@ -1,0 +1,316 @@
+@import "@root/scss/mixins.scss";
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 164px;
+    max-width: 100%;
+    overflow: hidden;
+
+    @media (max-width: 991px){
+        padding-bottom: 135px;
+    }
+}
+.team__title{
+    position: relative;
+
+    i{
+        width: 21px;
+        height: 21px;
+        position: absolute;
+        z-index: 1;
+
+        &::after,
+        &::before{
+            content: "";
+            display: block;
+            background: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &::after{
+            width: 100%;
+            height: 3px;
+        }
+        &::before{
+            height: 100%;
+            width: 3px;
+        }
+
+        &:nth-child(1){
+            top: 0;
+            right: calc(100% + 69px);
+            transform: translateY(-50%);
+        }
+        &:nth-child(2){
+            top: 0;
+            left: calc(100% + 55px);
+            transform: translateY(-50%);
+        }
+        &:nth-child(3){
+            right: calc(100% + 69px);
+            bottom: 0;
+        }
+        &:nth-child(4){
+            left: calc(100% + 55px);
+            bottom: 0;
+        }
+    }
+
+    span{
+        @include monument(800){
+            font-size: 88px;
+            line-height: 1.2;
+
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+
+            color: #7CE37C;
+        }
+    }
+    @media (max-width: 1151px){
+        span{
+            font-size: 75px;
+        }
+    }
+    @media (max-width: 991px){
+        i{      
+            width: 13px;
+            height: 13px;
+
+            &::after{
+                height: 1.8px;
+            }
+            &::before{
+                width: 1.8px;
+            }
+
+            &:nth-child(1){
+                top: 0;
+                right: calc(100% + 27px);
+                transform: translateY(-50%);
+            }
+            &:nth-child(2){
+                top: 0;
+                left: calc(100% + 10px);
+                transform: translateY(-50%);
+            }
+            &:nth-child(3){
+                right: calc(100% + 27px);
+                bottom: 0;
+            }
+            &:nth-child(4){
+                left: calc(100% + 10px);
+                bottom: 0;
+            }
+        }
+
+        span{
+            font-size: 65px;
+        }
+    }
+    @media (max-width: 656px){
+        span{
+            font-size: 50px;
+        }
+    }
+    @media (max-width: 465px){
+        span{
+            font-size: 35px;
+        }
+
+        i{            
+            &:nth-child(1){
+                top: 0;
+                right: calc(100% + 12px);
+                transform: translateY(-50%);
+            }
+            &:nth-child(2){
+                top: 0;
+                left: calc(100% + 9px);
+                transform: translateY(-50%);
+            }
+            &:nth-child(3){
+                right: calc(100% + 12px);
+                bottom: 0;
+            }
+            &:nth-child(4){
+                left: calc(100% + 9px);
+                bottom: 0;
+            }
+        }
+    }
+}
+.team__container{
+    margin-top: 113px;
+    width: 1070px;
+
+    @media (max-width: 1121px){
+        max-width: 991px;
+    }
+
+    @media (max-width: 991px){
+        margin-top: 90px;
+        max-width: 709px;
+    }
+}
+.team__wrapper{
+    display: flex;
+}
+.team__swiper{
+    overflow: visible;
+
+    .swiper-slide{
+        opacity: 1;
+        transition: opacity .2s ease;
+        height: 100%;
+    }
+}
+.team__grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -11px;
+
+    .team-item{
+        margin-top: 11px;
+        flex: 0 0 33.33333%;
+    }
+}
+
+// Team item
+
+@mixin backgroundTextPolygon {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7px), calc(100% - 7px) 100%, 7px 100%, 0 calc(100% - 7px));    
+
+    @media (max-width: 991px){
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 5px 100%, 0 calc(100% - 5px));            
+    }
+}
+
+.team-item{
+    position: relative;
+    margin: 0 -4px;
+
+    @media (max-width: 991px){
+        margin: 0 -3px;
+    }
+}
+.team-item__back{
+    max-width: 100%;
+}
+.team-item__personaje{
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    transform: translateX(-50%);
+    z-index: 2;
+    max-width: 92%;
+    overflow: hidden;
+    transition: opacity .35s ease-in-out;
+}
+.team-item__prof{
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 93.1%;
+    height: 81px;
+    padding: 12px 25px 15px;
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.7);
+    border: 0.886391px solid #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(255, 255, 255, 0.25), inset 0px -11.5231px 21.2734px rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(2.43196px);
+
+    transition: background .35s ease-in-out;
+
+    @include backgroundTextPolygon;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        font-size: 24.819px;
+        line-height: 1.05;
+
+        text-align: center;
+        text-transform: uppercase;
+        user-select: none;
+    }
+
+    @media (max-width: 1121px){
+        height: 72px;
+
+        p{
+            font-size: 22px;
+        }
+    }
+
+    @media (max-width: 991px){
+        height: 49px;
+
+        p{
+            font-size: 13.25px;
+        }
+    }
+}
+.team-item__text{
+    max-width: 281px;
+    max-height: calc(98% - 120px);
+    padding: 0 15px;
+    overflow: auto;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 40.5px);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+    font-size: 20px;
+    line-height: 1.555;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    user-select: none;
+    opacity: 0;
+    transition: opacity .35s ease-in-out;
+
+    
+    &::-webkit-scrollbar {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }   
+
+    @media (max-width: 1121px){
+        max-height: calc(98% - 110px);    
+        top: calc(50% - 36px);    
+    }
+
+    @media (max-width: 991px){
+        max-width: 196px; 
+        top: calc(50% - 24.5px);    
+        font-size: 13.25px;
+    }
+}
+
+.team-item:hover{
+    .team-item__personaje{
+        opacity: 0.2;
+    }
+    .team-item__prof{
+        background: rgba(255, 255, 255, 0.5);
+    }
+    .team-item__text{
+        opacity: 1;
+    }
+}

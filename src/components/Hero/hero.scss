@@ -1,0 +1,426 @@
+@import "@root/scss/mixins.scss";
+
+.hero{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: radial-gradient(44.67% 86.32% at 41.01% 100%, #8E74A6 0%, #000000 100%);
+
+    @media (max-width: 991px){
+        padding-bottom: 50px;
+        background: radial-gradient(76.28% 32.49% at 50% 50%, #8E74A6 0%, #000000 100%);
+    }
+
+    @media (max-width: 768px){        
+        background: radial-gradient(76.28% 32.49% at 50% 33%, #8E74A6 0%, #000000 100%);
+    }
+}
+.hero__back{
+    width: 899px;
+    height: 791px;
+    position: absolute;
+    bottom: 0;
+    right: 43.5%;
+    z-index: 1;
+
+    display: flex;
+    align-items: flex-end;
+
+    .background-tree{
+        width: 100%;
+        max-height: 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+    @media (max-width: 1304px){
+        right: 35%;
+    }
+    @media (max-width: 991px){
+        top: 0;
+        right: 25%;
+    }
+    @media (max-width: 991px){
+        width: 854px;
+        height: 744px;
+    }
+    @media (max-width: 768px){
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .background-personaje{
+        position: absolute;
+        max-height: 640px;
+        width: auto;
+        z-index: 3;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-43%);
+        transition: opacity 1s ease;
+        opacity: 0;
+
+        &.active{
+            opacity: 1;
+        }
+
+        @media (max-width: 768px){
+            max-height: 500px;    
+        }
+    }
+}
+.hero__container{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    height: 100%;
+
+    @media (max-width: 991px){
+        flex-wrap: wrap;
+    }
+    @media (max-width: 768px){
+        flex-direction: column;
+    }
+}
+
+// Orders
+
+@media (max-width: 991px){
+    .hero__side{
+        order: 1;
+        height: 744px;
+    }
+    .hero__info{
+        order: 2;
+        height: 744px;
+    }
+    .hero__slider{
+        order: 4;
+    }
+    .hero__socials{
+        order: 3;
+        height: 744px;
+    }    
+}
+
+
+// Hero Side
+.hero__side{
+    padding: 27px 36px;
+    background: rgba(41, 44, 52, 0.3);
+    backdrop-filter: blur(44px);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @media (max-width: 1304px){
+        padding: 25px;
+    }
+    @media (max-width: 768px){
+        display: none;
+    }
+}
+.hero__logo{
+    width: 38px;
+
+    img{
+        width: 100%;
+    }
+}
+.hero__nav{
+    margin-top: 86px;
+    writing-mode: vertical-lr;
+
+    display: flex;
+    align-items: center;
+
+    a{
+        font-size: 14px;
+        line-height: 1.21;
+
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+        opacity: 0.7;
+
+        margin: 20px 0;
+
+        &.active{
+            opacity: 1;
+        }
+    }
+}
+
+// Hero Info
+.hero__info{
+    margin-left: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 31px 37px 43px 0;
+    
+    @media (max-width: 768px){
+        height: 820px;
+        margin-left: 0;
+        align-items: flex-start;
+        padding-left: 38px;
+        padding-right: 0;
+    }
+
+    @media (max-width: 404px){
+        padding-left: 15px;
+    }
+}
+.hero__nft-label{
+    max-width: 132px;
+
+    img{
+        max-width: 100%;
+    }
+}
+.hero__info-wrapper{
+    max-width: 350px;
+
+    display: flex;
+    flex-direction: column;
+
+    // h2{
+    //     white-space: nowrap;
+    //     display: flex;
+    //     flex-direction: column;
+
+    //     @include archivo{
+    //         color: #fff;
+    //         text-transform: uppercase;
+    //         line-height: 0.75;
+    //     }
+
+        
+    //     .row-1{
+    //         font-size: 71.5px;
+    //     }
+    //     .row-2{
+    //         font-size: 62px;
+    //     }
+    //     .row-3{
+    //         font-size: 56.5px;
+    //         line-height: 1.08;
+    //         letter-spacing: -0.04em;
+            
+    //         color: transparent;
+    //         -webkit-text-stroke: 1px #FFFFFF;
+    //     }
+
+    //     &::after{
+    //         content: "";
+    //         display: block;
+    //         width: 100%;
+    //         height: 24px;
+    //         background: #fff;
+    //     }
+    // }
+
+    .image{
+        img{
+            max-width: 100%;
+            margin-bottom: 5px;
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: 100%;
+            height: 24px;
+            background: #fff;
+        }
+    }
+    p{
+        margin-top: 16px;
+        font-size: 9.63px;
+        line-height: 1.25;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+    }
+
+    @media (max-width: 565px){
+        max-width: 250px;
+    }
+    @media (max-width: 404px){
+        max-width: 200px;
+    }
+}
+
+// Hero Slider
+.hero__slider{
+    max-width: 333px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @media (max-width: 1304px){
+        max-width: 300px;
+    }
+
+    @media (max-width: 991px){
+        max-width: 100%;
+        flex-direction: column;
+    }
+    @media (max-width: 768px){
+        margin-top: 35px;
+    }
+}
+.hero__vertical-line{
+    height: 100%;
+    width: 19px;
+
+    display: flex;
+    justify-content: center;
+    
+    img{
+        min-width: 33px;
+        height: 100%;
+        flex-shrink: 0;
+    }
+    @media (max-width: 991px){
+        width: 991px;
+
+        img{            
+            width: 100%;
+        }
+
+        picture{
+            width: 100%;
+        }
+
+        &.fst{
+            transform: translateY(-50%);
+        }
+
+        &.lst{
+            transform: translateY(50%);
+        }
+    }
+    @media (max-width: 404px){
+        width: 768px;
+    }
+}
+.hero__swiper{
+    flex-grow: 1;
+    max-width: 230px;
+    overflow: visible;
+    height: 745px;
+    
+    .swiper-slide{
+        transition: opacity .45s ease, transform .45s ease;
+    }
+    .swiper-slide-active{
+        opacity: 1;
+        transform: scale(1.12);
+    }
+    @media (max-width: 991px){
+        max-width: unset;
+        width: 700px;
+        height: auto;
+    }
+    @media (max-width: 768px){
+        width: 568px;
+    }
+}
+.hero__slider-item{
+    padding: 10px 0;
+}
+
+// Hero Socials
+.hero__socials{
+    padding: 16px 15px 45px 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+
+    @media (max-width: 1304px){
+        padding-right: 5px;
+        padding-left: 0;
+    }
+
+    @media (max-width: 768px){
+        position: absolute;
+        right: 38.5px;
+        top: 150px;
+
+        .social__soc{
+            margin-top: auto;
+        }
+    }
+    @media (max-width: 404px){
+        right: 15px;
+    }
+}
+
+.hero__mint{
+    border-radius: 1.9629px;
+    min-width: 108px;
+    min-height: 47px;
+
+    span{
+        font-size: 14.452px;
+    }
+
+    @media (max-width: 768px){     
+        &:not(.hero__mint_mobile){
+            display: none;
+        }
+    }
+}
+
+// Header
+
+.header{
+    @media (min-width: 769px){
+        display: none;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 20px 13px 38px;     
+    background: rgba(41, 44, 52, 0.3);
+    backdrop-filter: blur(44px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);;
+
+    @media (max-width: 404px){
+        padding-left: 25px;
+    }
+}
+.header__burgermenu{
+    display: block;
+    width: 26px;
+    height: 22px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    span{
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+    }
+    span:nth-child(2){
+        width: 76%;
+    }
+}

@@ -1,0 +1,90 @@
+@import "@root/scss/mixins.scss";
+
+.types{
+    padding-top: 167px;
+    padding-bottom: 140px;
+    overflow: hidden;
+
+    @media (max-width: 991px){
+        padding-top: 130px;
+    }
+    @media (max-width: 768px){
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+}
+.types__title{
+    text-align: center;
+
+    @include monument(800){
+        font-size: 108px;
+        line-height: 1.2;
+
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #AA5CED;
+    }
+
+    @media (max-width: 991px){
+        font-size: 90px;
+    }
+    @media (max-width: 768px){
+        font-size: 65px;
+    }
+    @media (max-width: 404px){
+        font-size: 55px;
+    }
+}
+.types__container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.types__row{
+    display: flex;
+    align-items: center;
+    // transition: transform .5s linear;
+
+    + .types__row{
+        margin-top: 35px;
+
+        @media (max-width: 768px){
+            margin-top: 25px;
+        }
+    }
+}
+.types__item{
+    width: 290px;
+    height: 285px;
+    margin: 0 -12px;
+
+    &.min{
+        width: 256px;
+        height: 253px;
+        margin: 0;
+    }
+
+    @media (max-width: 768px){
+        width: 246.5px;
+        height: 242.25px;
+        margin: 0 -10px;
+
+        &.min{
+            width: 217.6px;
+            height: 215.05px;
+        }
+    }
+
+    @media (max-width: 565px){
+        width: 214px;
+        height: 210px;    
+        margin: 0 -9px;
+
+        &.min{
+            width: 198px;
+            height: 187px;
+        }    
+    }
+}

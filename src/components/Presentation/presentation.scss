@@ -1,0 +1,43 @@
+@import "@root/scss/mixins.scss";
+
+.presentation{
+    margin-top: -95px;
+    display: flex;
+    flex-direction: column;
+}
+.presentation__date{
+    transform: rotate(-4.04deg) skewX(-4.04deg);
+    width: 100%;
+    margin-top: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span{
+        @include neutron{
+            font-size: 20.2vw;
+            line-height: 1.05;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-right: 30px;
+
+            color: #000000;
+        }
+    }
+
+    @media (min-width: 1440px){
+        span{            
+            font-size: 301.43px;
+        }
+    }
+    @media (max-width: 656px){
+        margin-top: 15px;
+        min-height: 128px;
+        span{
+            margin-right: 15px;
+        }
+    }
+}

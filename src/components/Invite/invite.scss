@@ -1,0 +1,323 @@
+@import "@root/scss/mixins.scss";
+
+.invite{
+    padding-top: 150px;
+    padding-bottom: 130px;
+
+    @media (max-width: 991px){
+        padding: 65px 0;
+    }
+    @media (max-width: 404px){
+        padding: 30px 0;
+    }
+}
+.invite__limiter{
+    padding: 0 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 991px){
+        padding: 0 25px;
+    }
+    @media (max-width: 768px){
+        padding: 0 12px;
+    }
+    @media (max-width: 404px){
+        padding: 0 5px;
+    }
+}
+.invite__container{
+    max-width: 1240px;
+    padding: 8.5px 15px;
+    position: relative;
+}
+.invite__rhombus{
+    position: absolute;
+    width: 14.5px;
+    height: 14.5px;
+
+    &_1{
+        top: 0;
+        left: 0;
+    }
+    &_2{
+        top: 0;
+        right: 0;
+    }
+    &_3{
+        bottom: 0;
+        left: 0;
+    }
+    &_4{
+        bottom: 0;
+        right: 0;
+    }
+}
+.invite__corner{
+    position: absolute;
+    width: 24.5px;
+    height: 25.5px;
+    z-index: 3;
+
+    &_1{
+        top: 7px;
+        left: 7px;
+    }
+    &_2{
+        top: 7px;
+        right: 7px;
+        transform: rotate(90deg);
+    }
+    &_3{
+        bottom: 7px;
+        left: 7px;
+        transform: rotate(-90deg);
+    }
+    &_4{
+        bottom: 7px;
+        right: 7px;
+        transform: rotate(180deg);
+    }
+
+    @media (max-width: 768px){
+        width: 17px;
+        height: 17px;
+    }
+}
+
+@mixin clipPathBorder{
+    clip-path: polygon(11px 0, calc(100% - 11px) 0, 100% 11px, 100% calc(100% - 11px), calc(100% - 11px) 100%, 11px 100%, 0 calc(100% - 11px), 0 11px);
+}
+
+.invite__wrapper{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 1.6px;
+    @include clipPathBorder;
+    background: #B268F1;    
+    overflow: hidden;
+
+    &::before{
+        content: "";
+        display: block;
+        width: calc(100% - 1.6px);
+        height: calc(100% - 3.2px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../../assets/images/invite/background.png);
+        background-size: cover;
+        object-position: center top;
+        z-index: 1;
+        @include clipPathBorder;
+    }
+}
+
+.invite__content{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.invite__left{
+    margin-left: 112px;
+    flex-grow: 1;
+    max-width: 317px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    h1{
+        @include monument(800){
+            font-size: 48.5631px;
+            line-height: 1;
+
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+        }
+    }
+    p{
+        margin-top: 28px;
+        font-size: 9px;
+        line-height: 1.78;
+        
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+    }
+
+    @media (max-width: 1151px){
+        margin-left: 60px;
+    }
+    @media (max-width: 991px){
+        margin-left: 35px;
+        max-width: 275px;
+        h1{
+            font-size: 42px;
+        }
+        p{
+            margin-top: 19px;
+        }
+    }
+    @media (max-width: 768px){
+        margin: 0;
+        padding-top: 52px;
+        align-items: center;
+        text-align: center;
+    }
+    @media (max-width: 768px){
+        padding-bottom: 0;
+    }
+    @media (max-width: 565px){
+        padding: 52px 25px 0;
+        max-width: 100%;
+        h1{
+            font-size: 33px;
+        }
+        p{
+            font-size: 11px;
+        }
+    }
+    @media (max-width: 404px){
+        padding-top: 35px;
+
+        h1{
+            font-size: 28px;
+        }
+        p{
+            font-size: 9px;
+        }
+    }
+}
+.invite__btn{
+    margin-top: 35px;
+    min-width: 185px;
+    min-height: 47px;
+    
+    span{
+        font-size: 14.452px;
+    }
+    img{
+        margin-left: 19px;
+        max-width: 17px;
+        width: 100%;
+    }
+
+    @media (max-width: 991px){
+        margin-top: 24px;
+        min-width: 160px;
+        min-height: 41px;
+
+        span{
+            font-size: 12.5px;
+        }
+        img{
+            margin-left: 14.75px;
+            max-width: 16px;
+        }
+    }
+}
+
+.invite__right{
+    margin-left: 38px;
+    margin-right: 28px;
+    max-width: 615px;
+    width: 100%;
+    position: relative;
+    height: auto;
+
+    display: flex;
+    align-items: flex-end;
+
+    picture{
+        width: auto;
+    }
+
+    @media (max-width: 1151px){
+        margin: 0 20px;
+    }
+    @media (max-width: 991px){
+        margin: 0 -15px;
+    }
+    @media (max-width: 768px){
+        margin: 0;
+        margin-top: 32px;
+        max-width: 500px;
+    }
+    @media (max-width: 565px){
+        max-width: 100%;
+    }
+}
+.invite__personaje{
+    width: 100%;
+    margin-bottom: 1px;
+
+    &_1{
+        max-width: 316px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    &_2{
+        max-width: 392px;
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+    }
+    &_3{
+        max-width: 324px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    @media (max-width: 991px){
+        &_1{
+            max-width: 240px;
+        }
+        &_2{
+            max-width: 320px;
+        }
+        &_3{
+            max-width: 245px;
+        }
+    }
+
+    @media (max-width: 768px){
+        &_1{
+            max-width: 51.38%;
+        }
+        &_2{
+            max-width: 63.739%;
+        }
+        &_3{
+            max-width: 52.682%;
+        }        
+    }
+    @media (max-width: 565px){
+        &_1{
+            left: -10px;
+        }
+        &_3{
+            right: -10px;
+        }
+    }
+}

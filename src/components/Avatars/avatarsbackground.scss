@@ -1,0 +1,52 @@
+.avatarsback{
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (max-width: 656px){
+        margin-top: 100px;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        order: 2;
+    }
+}
+.avatarsback__container{
+    display: flex;
+    justify-content: center;
+}
+.avatarsback__wrapper{
+    display: flex;
+    flex-shrink: 0;
+    width: 110vw;
+}
+.marquee__root{
+    overflow: visible!important;
+    transform: matrix(0.93, -0.12, 0.41, 0.99, 0, 0);
+}
+.avatarsback__item{
+    max-width: 300px;
+    padding: 0;
+
+    @media (max-width: 1120px){
+        max-width: 250px;
+    }
+    @media (max-width: 991px){
+        max-width: 200px;
+    }
+    @media (max-width: 768px){
+        max-width: 150px;
+    }
+}
+.avatarsback__card-img{
+    min-width: 103%;
+
+    img{
+        max-width: 103%;
+        width: 100%;
+    }
+}
