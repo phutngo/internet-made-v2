@@ -10,7 +10,7 @@ export default function(){
                 <div className="avatars__title">
                     <i></i><i></i><i></i><i></i>
                     <h3>Avatars</h3>
-                    <h2>8000</h2>
+                    <h2>9999</h2>
                 </div>
                 <p className="avatars__text">
                     To start off the Internet Made movement &amp; brand, we will be 

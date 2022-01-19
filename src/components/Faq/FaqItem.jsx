@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 
-export default function({ question, answer }){
+export default function({ id, question, answer }){
     const [parentRef, setParentRef] = useState(null);
     const [ref, setRef] = useState(null);
     const [open, setOpen] = useState(false);
@@ -37,8 +37,8 @@ export default function({ question, answer }){
 
     return (
         <div className={classNames("faq-item", {opened: open})} ref={setParentRef}>
-            <div className="faq-item__question" onClick={clickHandler}>{question} <i></i></div>
-            <p className="faq-item__answer" ref={setRef} style={styles}>{typeof answer === "string" ? answer : answer()}</p>
+            <div className="faq-item__question" onClick={clickHandler}>{id+1}. {question} <i></i></div>
+            <p className="faq-item__answer" ref={setRef} style={styles} dangerouslySetInnerHTML={{ __html: answer }}></p>
         </div>
     );
 }
