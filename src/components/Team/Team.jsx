@@ -4,17 +4,18 @@ import TeamItem from './TeamItem';
 import "./team.scss"
 
 export default function(){
-    const [isSwiper, setIsSwiper] = useState(window.innerWidth < 768);
+    const [isSwiper, setIsSwiper] = useState(window.innerWidth <= 768);
     const [data, setData] = useState([]);
 
     const settings = {
         slidesPerView: 3,
         loop: true,
         centeredSlides: true,
+        initialSlide: 1
     };
 
     const resizeHandler = () => {
-        setIsSwiper(window.innerWidth < 768);
+        setIsSwiper(window.innerWidth <= 768);
     };
 
     const getData = async () => {
@@ -33,7 +34,7 @@ export default function(){
     }, []);
 
     return (
-        <div className="team">
+        <div className="team" id="team">
             <h2 className="team__title">
                 <i></i><i></i><i></i><i></i>
                 <span>Our team</span>

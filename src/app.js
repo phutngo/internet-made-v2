@@ -12,15 +12,19 @@ import Types from './components/Types/Types';
 import Xoxo from './components/Xoxo/Xoxo';
 import Footer from './components/Footer/Footer';
 import ImNFT from './components/ImNFT/ImNFT';
+import VideoContent from './components/VideoContent/VideoContent';
+import Release from './components/Release/Release';
 
 const App = () => {
     return (
         <Route path="/">
             <Hero />
             <ImNFT />
+            <VideoContent />
             <Xoxo />
             <Avatars />
             <Presentation />
+            <Release />
             <Types />
             <Faq />
             <Ticker />

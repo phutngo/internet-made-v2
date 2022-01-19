@@ -151,12 +151,13 @@
     width: 100%;
 
     @media (max-width: 1121px){
-        max-width: 991px;
     }
 
     @media (max-width: 991px){
         margin-top: 90px;
-        max-width: 709px;
+    }
+    @media (max-width: 768px){
+        width: 747px;
     }
 }
 .team__wrapper{
@@ -168,7 +169,7 @@
     .swiper-slide{
         opacity: 1;
         transition: opacity .2s ease;
-        height: 100%;
+        height: auto;
     }
 }
 .team__grid{
@@ -182,6 +183,10 @@
     .team-item{
         flex: 0 0 25%;
         margin-top: 24px;
+    
+        @media (max-width: 1095px){
+            flex-basis: 33.3333%;
+        }
     }
 }
 
@@ -201,6 +206,10 @@
     padding: 0 8px;
     overflow: hidden;
     height: auto;
+
+    @media (max-width: 768px){
+        height: 100%;
+    }
 }
 .team-item__content-wrapper{
     position: relative;
@@ -245,6 +254,10 @@
     height: 100%;
 
     text-align: center;
+
+    @media (max-width: 865px){
+        padding: 15px 20px 17px;
+    }
 }
 .team-item__avatar{
     width: 173px;
@@ -257,6 +270,11 @@
 
     img{
         max-width: 100%;
+    }
+
+    @media (max-width: 865px){
+        width: 137px;
+        height: 137px;
     }
 }
 .team-item__name{
@@ -271,6 +289,12 @@
     overflow: hidden;
     
     color: #FFFFFF;
+
+    @media (max-width: 865px){
+        margin-top: 11px;
+
+        font-size: 16px;
+    }
 }
 .team-item__title{
     margin-top: 5px;
@@ -281,6 +305,12 @@
     font-weight: 400;
     
     color: #FFFFFF;
+
+    @media (max-width: 865px){
+        margin-top: 4px;
+
+        font-size: 12.6px;
+    }
 }
 .team-item__description{
     margin-top: 10px;
@@ -293,6 +323,12 @@
     letter-spacing: 0.04em;
 
     color: #FFFFFF;
+
+    @media (max-width: 865px){
+        margin-top: 8px;
+
+        font-size: 8px;
+    }
 }
 .team-item__socials{
     margin-top: auto;
@@ -320,5 +356,17 @@
 
     + .team-item__socials-link{
         margin-left: 20px;
+    }
+
+    @media (max-width: 865px){
+        margin-top: 15px;
+
+        width: 27.43px;
+        height: 27.43px;
+
+        img{
+            max-width: 10px;
+            max-height: 10px;
+        }
     }
 }

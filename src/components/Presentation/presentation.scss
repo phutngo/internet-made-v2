@@ -1,12 +1,15 @@
 @import "@root/scss/mixins.scss";
 
 .presentation{
-    margin-top: -95px;
     display: flex;
     flex-direction: column;
+    background: #02030F;
+    position: relative;
+    z-index: 2;
+    transform: rotate(-4.04deg) skewX(-4.04deg);
+    margin: -95px -4.04px 0;
 }
 .presentation__date{
-    transform: rotate(-4.04deg) skewX(-4.04deg);
     width: 100%;
     overflow: hidden;
     margin-top: 30px;
@@ -30,14 +33,21 @@
         }
     }
 
-    @media (min-width: 1440px){
+    @media (max-width: 1095px){
         span{            
-            font-size: 191px;
+            font-size: 131px;
+        }
+    }
+
+    @media (max-width: 394px){
+        span{
+            font-size: 105px;
         }
     }
     @media (max-width: 656px){
         margin-top: 15px;
         min-height: 128px;
+
         span{
             margin-right: 15px;
         }

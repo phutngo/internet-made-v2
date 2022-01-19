@@ -72,7 +72,7 @@ export default function(){
     }, [settings]);
 
     return (
-        <div className="types">
+        <div className="types" id="lookbook">
             <h2 className="types__title">Lookbook</h2>
             <div className="types__container" ref={setRefMain}>
                 <div className="types__row" ref={setRefRowUp}>

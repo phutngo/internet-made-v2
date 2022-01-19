@@ -120,6 +120,9 @@ export default function(){
                         <a href="#vision">Vision</a>
                     </nav>
                 </div>
+                <div className="hero__other-nav">
+                    <a href="#howitstarted">How It Started</a>
+                </div>
                 <div className="hero__info">
                     <img src={nftLabel} alt="nftLabel" className="hero__nft-label" />
                     <div className="hero__info-wrapper">
@@ -132,7 +135,7 @@ export default function(){
                             <img src={internetMade} alt="im" />
                         </div>
                         <p>
-                            playing with reality
+                            playing with <span>reality</span>
                         </p>
                     </div>
                 </div>
@@ -148,7 +151,7 @@ export default function(){
                             <SwiperSlide>
                                 <div className="hero__slider-item" data-swiper-parallax-scale="1" data-swiper-parallax-opacity="0.5">
                                     <picture>
-                                        <source srcSet={item01Webp} type="image/webp" />                                        
+                                        {/* <source srcSet={item01Webp} type="image/webp" />                                         */}
                                         <img src={item01} alt="item" />
                                     </picture>
                                 </div>
@@ -156,7 +159,7 @@ export default function(){
                             <SwiperSlide>
                                 <div className="hero__slider-item" data-swiper-parallax-scale="1" data-swiper-parallax-opacity="0.5">
                                     <picture>
-                                        <source srcSet={item02Webp} type="image/webp" />                                        
+                                        {/* <source srcSet={item02Webp} type="image/webp" />                                         */}
                                         <img src={item02} alt="item" />
                                     </picture>
                                 </div>
@@ -164,7 +167,7 @@ export default function(){
                             <SwiperSlide>
                                 <div className="hero__slider-item" data-swiper-parallax-scale="1" data-swiper-parallax-opacity="0.5">
                                     <picture>
-                                        <source srcSet={item03Webp} type="image/webp" />                                        
+                                        {/* <source srcSet={item03Webp} type="image/webp" />                                         */}
                                         <img src={item03} alt="item" />
                                     </picture>
                                 </div>
@@ -172,7 +175,7 @@ export default function(){
                             <SwiperSlide>
                                 <div className="hero__slider-item" data-swiper-parallax-scale="1" data-swiper-parallax-opacity="0.5">
                                     <picture>
-                                        <source srcSet={item04Webp} type="image/webp" />                                        
+                                        {/* <source srcSet={item04Webp} type="image/webp" />                                         */}
                                         <img src={item04} alt="item" />
                                     </picture>
                                 </div>
@@ -191,7 +194,8 @@ export default function(){
                         className="hero__mint"
                         onClick={console.log.bind(null)}
                     >
-                        <span>Mint</span>
+                        <span className='hide'>Mint</span>
+                        <span className='show'>Soon</span>
                     </PlusButton>
                     <Socials className="social__soc" />
                 </div>

@@ -135,7 +135,7 @@
     }
 }
 .hero__nav{
-    margin-top: 50px;
+    margin-top: 28px;
     writing-mode: vertical-rl;
     transform: scale(-1);
     max-height: 595px;
@@ -265,21 +265,65 @@
         }
     }
     p{
-        margin-top: 16px;
-        font-size: 9.63px;
-        line-height: 1.25;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
+        margin-top: 5px;
 
-        color: #FFFFFF;
+        @include monument(800){            
+            font-size: 21px;
+            line-height: 1.25;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
 
+            color: rgba(255, 255, 255, 0.8);
+        }
     }
 
     @media (max-width: 565px){
         max-width: 250px;
+
+        p{
+            font-size: 24px;
+            letter-spacing: 0.07em;
+            span{
+                display: block;
+                font-size: 40px;
+                line-height: 0.7;
+                letter-spacing: 0.11em;
+            }
+        }
     }
     @media (max-width: 404px){
         max-width: 200px;
+
+        p{
+            font-size: 19.5px;
+            letter-spacing: 0.05em;
+            span{
+                display: block;
+                font-size: 34px;
+                line-height: 0.7;
+                letter-spacing: 0.05em;
+            }
+        }
+    }
+}
+.hero__other-nav{
+    position: absolute;
+    left: 95px;
+    top: 0;
+    padding-top: 39px;
+    padding-left: 37px;
+
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    opacity: 0.7;
+
+    @media (max-width: 768px){
+        display: none;
     }
 }
 
@@ -397,9 +441,47 @@
     border-radius: 1.9629px;
     min-width: 108px;
     min-height: 47px;
+    transition: background .35s ease-in-out;
 
     span{
         font-size: 14.452px;
+        transition: transform .35s ease-in-out, opacity .35s ease-in-out;
+    }
+
+    span.hide{
+
+    }
+    span.show{
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    i{
+        &::after,
+        &::before{            
+            transition: background .35s ease-in-out;
+        }
+    }
+
+    &:hover{
+        background: #666666;
+
+        span.hide{
+            transform: scale(0.1);
+            opacity: 0;
+        }
+        span.show{
+            transform: translate(-50%, -50%) scale(1);
+        }
+        i{
+            &::after,
+            &::before{ 
+                background: #fff;
+            }
+        }
     }
 
     @media (max-width: 768px){     

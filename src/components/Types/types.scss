@@ -17,7 +17,7 @@
     text-align: center;
 
     @include monument(800){
-        font-size: 108px;
+        font-size: 88px;
         line-height: 1.2;
 
         letter-spacing: 0.04em;
@@ -25,15 +25,17 @@
 
         color: #fff;
     }
-
-    @media (max-width: 991px){
-        font-size: 90px;
-    }
     @media (max-width: 768px){
         font-size: 65px;
     }
-    @media (max-width: 404px){
-        font-size: 55px;
+    @media (max-width: 575px){
+        font-size: 50px;
+    }
+    @media (max-width: 414px){
+        font-size: 43px;
+    }
+    @media (max-width: 359px){
+        font-size: 37px;
     }
 }
 .types__container{

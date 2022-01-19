@@ -1,7 +1,6 @@
 .presentationhat{
     width: 100%;
-    transform: rotate(-4.04deg) skewX(-4.04deg);
-    background: #FFA133;;
+    background: #FFA133;
     overflow: hidden;
 }
 .presentationhat__item{
@@ -19,7 +18,11 @@
     }
 
     .presentationhat-logo{
-        max-width: 50px;
+        max-width: 55px;
+
+        @media (max-width: 768px){
+            max-width: 37px;
+        }
     }
 
     .big{

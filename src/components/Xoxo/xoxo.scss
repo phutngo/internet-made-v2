@@ -45,7 +45,7 @@
     h2{
         @include monument(800){
             font-size: 70px;
-            line-height: 1.2;
+            line-height: 1;
             /* identical to box height */
             color: #fff;
 
@@ -75,6 +75,24 @@
             font-weight: 400;
             
             color: #FFFFFF;
+        }
+    }
+
+    @media (max-width: 768px){
+        h2{
+            font-size: 53px;
+        }
+        p{
+            font-size: 11px;
+
+            &.small{
+                margin-top: 44px;
+            }
+        }
+    }
+    @media (max-width: 374px){
+        h2{
+            font-size: 45px;
         }
     }
 }

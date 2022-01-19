@@ -1,8 +1,42 @@
 @import "@root/scss/mixins.scss";
+
 .imnft{
     max-width: 100%;
     overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 26px 0 16px;
+
+    span{
+        @include monument(800);
+
+        flex-shrink: 0;
+        white-space: nowrap;
+        font-size: 99px;
+        line-height: 1;
+        
+        letter-spacing: 0.03em;
+        
+        color: #000000;
+
+        display: block;
+        margin: 0 50px;
+    }
+
+    @media (max-width: 1440px){
+        padding: 1.805vw 0 1.111vw;
+
+        span{
+            font-size: 6.875vw;
+        }
+    }
+    @media (max-width: 565px){
+        padding: 20px 0 16px;
+    }
 }
+
 .imnft__white{
     display: flex;
     background: #fff;
