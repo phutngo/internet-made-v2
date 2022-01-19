@@ -268,15 +268,46 @@
     justify-content: center;
     align-items: flex-end;
     background: #02030F;
+    position: relative;
 
+    picture{
+        max-width: 95%;
+        max-height: 105%;
+    }
     img{
         max-width: 100%;
-        max-height: 105%;
+        max-height: 100%;
+    }
+
+    .fake-avatar{
+        position: relative;
+        z-index: 2;
+        transition: opacity .75s ease, transform .75s ease;
+    }
+    .real-avatar{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(100%);
+        bottom: 0;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity .75s ease, transform .5s ease;
     }
 
     @media (max-width: 865px){
         width: 137px;
         height: 137px;
+    }
+
+    &:hover{
+        .fake-avatar{
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        .real-avatar{
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
     }
 }
 .team-item__name{

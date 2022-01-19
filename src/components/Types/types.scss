@@ -4,9 +4,7 @@
     padding-top: 167px;
     padding-bottom: 140px;
     overflow: hidden;
-    background-size: 100% 816px;
-    background-repeat: no-repeat;
-    background-position: center top;
+    position: relative;
 
     @media (max-width: 1440px){
         background-size: cover;
@@ -24,8 +22,19 @@
         padding-bottom: 70px;
     }
 }
+.types__background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    max-height: 816px;
+}
 .types__title{
     text-align: center;
+    position: relative;
+    z-index: 3;
 
     @include monument(800){
         font-size: 88px;
@@ -54,6 +63,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 3;
 }
 .types__row{
     display: flex;

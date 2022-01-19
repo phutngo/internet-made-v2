@@ -151,7 +151,7 @@ export default function(){
                             <SwiperSlide>
                                 <div className="hero__slider-item" data-swiper-parallax-scale="1" data-swiper-parallax-opacity="0.5">
                                     <picture>
-                                        {/* <source srcSet={item01Webp} type="image/webp" />                                         */}
+                                        <source srcSet={item01Webp} type="image/webp" />                                        
                                         <img src={item01} alt="item" />
                                     </picture>
                                 </div>
@@ -159,7 +159,7 @@ export default function(){
                             <SwiperSlide>
                                 <div className="hero__slider-item" data-swiper-parallax-scale="1" data-swiper-parallax-opacity="0.5">
                                     <picture>
-                                        {/* <source srcSet={item02Webp} type="image/webp" />                                         */}
+                                        <source srcSet={item02Webp} type="image/webp" />                                        
                                         <img src={item02} alt="item" />
                                     </picture>
                                 </div>
@@ -167,7 +167,7 @@ export default function(){
                             <SwiperSlide>
                                 <div className="hero__slider-item" data-swiper-parallax-scale="1" data-swiper-parallax-opacity="0.5">
                                     <picture>
-                                        {/* <source srcSet={item03Webp} type="image/webp" />                                         */}
+                                        <source srcSet={item03Webp} type="image/webp" />                                        
                                         <img src={item03} alt="item" />
                                     </picture>
                                 </div>
@@ -175,7 +175,7 @@ export default function(){
                             <SwiperSlide>
                                 <div className="hero__slider-item" data-swiper-parallax-scale="1" data-swiper-parallax-opacity="0.5">
                                     <picture>
-                                        {/* <source srcSet={item04Webp} type="image/webp" />                                         */}
+                                        <source srcSet={item04Webp} type="image/webp" />                                        
                                         <img src={item04} alt="item" />
                                     </picture>
                                 </div>

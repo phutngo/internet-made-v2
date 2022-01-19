@@ -11,25 +11,23 @@ export default function(){
     return (
         <section className="xoxo">
             <picture>
-                {/* <source srcSet={backgroundMobileWebp} media="(max-width: 991px)" type='image/webp' />
+                <source srcSet={backgroundMobileWebp} media="(max-width: 991px)" type='image/webp' />
                 <source srcSet={backgroundMobile} media="(max-width: 991px)" type='image/png' />
-                <source srcSet={backgroundWebp} type='image/webp' /> */}
+                <source srcSet={backgroundWebp} type='image/webp' />
                 <img src={background} alt="" className="xoxo__background"/>
             </picture>
             <div className="xoxo__container container">
                 <div className="xoxo__content">
                     <h2>Our Vision</h2>
                     <p className='big'>
-                        We are not just a collection. We are something much bigger, 
-                        that is tough to put into words just yet. Simplest way to put 
-                        it is that we are a fashion house or as we label ourselves ‘‘an 
-                        artificial fashion atelier’’ that involves the community in our 
-                        vision, creations and development of what Internet Made will be 
-                        in the upcoming years.
+                        Internet Made is more than a collection: we’re a movement bringing the 
+                        fashion house to the digital world. We’re an artificial fashion atelier 
+                        bringing our community into our vision and future creative development. 
+                        Our designs evolve with the changing landscape of innovation.
                     </p>
                     <p className="small">
-                        Our designs are not final, just as our vision will progress into something 
-                        bigger than us - a movement for all the artists, creators &amp; fashion designers. 
+                        Internet Made is a brand and a movement bringing artists, creators, and fashion 
+                        designers together to use technology to express themselves in a new way
                     </p>
                 </div>
             </div>

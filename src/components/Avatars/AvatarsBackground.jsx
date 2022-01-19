@@ -50,12 +50,8 @@ export default function(){
         }
 
         return {
-            start(){
-                animate();
-            },
-            stop(){
-                cancelAnimationFrame(raf);
-            }
+            start(){ animate(); },
+            stop(){ cancelAnimationFrame(raf); }
         }
     };
 
@@ -88,37 +84,37 @@ export default function(){
                             <React.Fragment key={id}>
                                 <div className="avatarsback__item">
                                     <picture>
-                                        {/* <source srcSet={card3Webp} type="image/webp" /> */}
+                                        <source srcSet={card3Webp} type="image/webp" />
                                         <img src={card3} alt="card" className="avatarsback__card-img"/>
                                     </picture>
                                 </div>
                                 <div className="avatarsback__item">
                                     <picture>
-                                        {/* <source srcSet={card2Webp} type="image/webp" /> */}
+                                        <source srcSet={card2Webp} type="image/webp" />
                                         <img src={card2} alt="card" className="avatarsback__card-img"/>
                                     </picture>
                                 </div>
                                 <div className="avatarsback__item">
                                     <picture>
-                                        {/* <source srcSet={card3Webp} type="image/webp" /> */}
+                                        <source srcSet={card3Webp} type="image/webp" />
                                         <img src={card3} alt="card" className="avatarsback__card-img"/>
                                     </picture>
                                 </div>
                                 <div className="avatarsback__item">
                                     <picture>
-                                        {/* <source srcSet={card4Webp} type="image/webp" /> */}
+                                        <source srcSet={card4Webp} type="image/webp" />
                                         <img src={card4} alt="card" className="avatarsback__card-img"/>
                                     </picture>
                                 </div>
                                 <div className="avatarsback__item">
                                     <picture>
-                                        {/* <source srcSet={card5Webp} type="image/webp" /> */}
+                                        <source srcSet={card5Webp} type="image/webp" />
                                         <img src={card5} alt="card" className="avatarsback__card-img"/>
                                     </picture>
                                 </div>
                                 <div className="avatarsback__item">
                                     <picture>
-                                        {/* <source srcSet={card6Webp} type="image/webp" /> */}
+                                        <source srcSet={card6Webp} type="image/webp" />
                                         <img src={card6} alt="card" className="avatarsback__card-img"/>
                                     </picture>
                                 </div>

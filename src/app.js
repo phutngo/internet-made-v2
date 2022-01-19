@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/">
             <Hero />
             <ImNFT />
-            {/* <VideoContent /> */}
+            <VideoContent />
             <Xoxo />
             <Avatars />
             <Presentation />
