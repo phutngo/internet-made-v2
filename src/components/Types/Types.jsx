@@ -29,21 +29,16 @@ export default function(){
     const [refRowDown, setRefRowDown] = useState(null);
     const [settings, setSettings] = useState({ inited: false });
 
-    console.log(settings)
-
     const initMoveLine = () => {
         if(!refMain || !refRowUp || !refRowDown){ return; }
-        // if(document.readyState !== "complete"){
-        //     window.addEventListener("load", initMoveLine);
-        // }
 
         const step           = 0.8; // You can change this value to set speed you need.
-        const {top, height}  = refMain.getBoundingClientRect();
+        const {top, height, left}  = refMain.getBoundingClientRect();
         const elementFromTop = top + (window.pageYOffset || document.documentElement.scrollTop);
         const paddingTop     = window.innerHeight; 
         const startFrom      = elementFromTop - paddingTop;
-        const leftValue      = window.innerWidth - refRowUp.getBoundingClientRect().left;
-        const initValue      = Math.min(0, ((elementFromTop + height) - startFrom - leftValue) * -step);
+        const scrollLength   = left < 0 ? window.innerWidth + Math.abs(left) : window.innerWidth - left;
+        const initValue      = scrollLength - (height + paddingTop) * step;
 
         setSettings({
             elementFromTop,
@@ -62,7 +57,13 @@ export default function(){
         refRowDown.style.transform = `translateX(${value}px)`;
     };
 
-    useEffect(initMoveLine, [refMain, refRowUp, refRowDown]);
+    useEffect(() => {       
+        if(document.readyState === "complete"){
+            initMoveLine();
+        } else {
+            window.addEventListener("load", initMoveLine);
+        }
+    }, [refMain, refRowUp, refRowDown]);
 
     useEffect(() => {
         if(settings.inited === false) { return; }
