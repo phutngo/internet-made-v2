@@ -71,18 +71,34 @@
 .types__item{
     width: 290px;
     height: 285px;
-    margin: 0 -12px;
+    margin: 0 -5px;
+    position: relative;
+
+    &:not(.min):after{
+        content: "";
+        display: block;
+        width: 90%;
+        height: 90%;
+        border: 14.1476px solid #47C3E7;
+        filter: blur(69.4521px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
 
     &.min{
         width: 256px;
         height: 253px;
         margin: 0;
+        opacity: 0.5;
     }
 
     @media (max-width: 768px){
         width: 246.5px;
         height: 242.25px;
-        margin: 0 -10px;
+        margin: 0 -4px;
 
         &.min{
             width: 217.6px;
@@ -93,7 +109,7 @@
     @media (max-width: 565px){
         width: 214px;
         height: 210px;    
-        margin: 0 -9px;
+        margin: 0 -3px;
 
         &.min{
             width: 198px;

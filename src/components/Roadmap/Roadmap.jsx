@@ -10,7 +10,7 @@ export default function(){
     useEffect(getData.bind(null, '/json/roadmap.json', setData), []);
 
     return (
-        <section className="roadmap">
+        <section className="roadmap" id="roadmap">
             <div className="roadmap__container">
                 <h2 className="roadmap__title">Roadmap</h2>
                 <div className="roadmap__list">

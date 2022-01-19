@@ -13,15 +13,15 @@ export default function(){
                     <h2>9999</h2>
                 </div>
                 <p className="avatars__text">
-                    To start off the Internet Made movement &amp; brand, we will be 
-                    releasing our initial collection of 9,999 IM ‘‘avatars’’ with 150+ 
-                    traits. Each one will be a unique NFT, made out of traits in different colorways, 
-                    ultimately being a 1/1 combination.
+                    To start off the Internet Made (IM) movement, we will be releasing our initial 
+                    collection of 9,999 IM ‘‘avatars’’ with 150+ traits. Each one will be a unique 
+                    NFT made out of unique traits and colorways so that every NFT is a singular 1/1 
+                    combination.
                     <br />
                     <br />
-                    This avatar will grant you access to our ecosystem, which will be one of a kind. 
-                    Our goal is to create the best possible experience for everyone involved - holders, 
-                    artists &amp; founders.
+                    This will grant you access to our ecosystem, which will be as unique as your avatar. 
+                    Our goal is to welcome everyone – from our holders, artists, and founders – into the 
+                    future of fashion.
                 </p>
             </div>
         </section>

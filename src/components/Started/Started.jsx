@@ -12,31 +12,33 @@ export default function(){
                     <h2 className="started__title">HOW IT STARTED</h2>
                     <div className="started__text">
                         <p>
-                            It was in June 2021, when we met in real life for the first time. 
-                            What was first meant to be a quick chat, turned into us two talking 
-                            for hours about web3 and that we wanted to make something bigger than 
-                            us. After all, we were entering a new era, full of opportunities and 
-                            possibilities, so the timing was perfect.
+                            It was in June 2021 when we met in real life for the first time. What was first meant 
+                            to be a quick chat turned into us talking for hours about Web3. We wanted to make something
+                            bigger than just the two of us. After all, we were entering a new era, full of opportunities 
+                            and possibilities, so the timing was perfect.
                         </p>
                         <p>
-                            We both had a streetwear brand in the past (one could argue successful or not, 
-                            to us it was everything we ever wanted it to be - a reflection of our 
-                            imagination, a way to express ourselves and some people loved it) &amp; at that 
-                            moment we both had marketing agencies, which we merged together now under Fuell Media. 
-                            Rok was already very experienced in web3 (got into crypto in late 2017) &amp; was researching about 
-                            NFTs from March 2021, so our vision was to create something fashion related in this space. 
-                            Something that was never done before. Our way.
+                            We both had a streetwear brand in the past. Some people loved it, some didn’t, but 
+                            to us it was everything we ever wanted it to be - a reflection of our imagination, 
+                            a way to express ourselves.
                         </p>
                         <p>
-                            Fast forward 4 months, we were ready. We found our investors, who loved the idea, 
-                            our plan and most importantly believed in us. Thank you Andrej and Miran for 
-                            making all of this possible.
+                            In that meeting, we both realized that we had a shared vision to bring our fashion knowledge 
+                            to the new frontier. We wanted to do something that had never been done before in our own way.
                         </p>
                         <p>
-                            We had a great idea and it was time to find and put together an A-team. 
-                            From our past projects and network we found 5 most talented and ambitious designers - 
-                            our lead designer Nik, 3D model designer Kristian and our 3 fashion designers, Lara, 
-                            Hugo &amp; Lara.
+                            Fast forward four months later, and we were ready. We found our investors who loved the 
+                            idea, our plan, and who believed in us. Thank you to Andrej and Miran for making all of 
+                            this possible.
+                        </p>
+                        <p>
+                            With our vision and our investors, it was time to form our A-Team. We assembled 
+                            the superstars from our network and past projects, including five talented designers: 
+                            our lead designer Nik Preston, our 3D model designer Kristian Ivansek, and our three 
+                            fashion designers: Lara Ponebsek, Hugo Suklje, and Lara Pikovnik.
+                        </p>
+                        <p>
+                            Together, we are Internet Made.
                         </p>
                     </div>
                 </div>

@@ -9,17 +9,19 @@ import type04 from '@root/assets/images/types/type-04.png';
 import type05 from '@root/assets/images/types/type-05.png'; 
 import type06 from '@root/assets/images/types/type-06.png'; 
 import type07 from '@root/assets/images/types/type-07.png'; 
-import type08min from '@root/assets/images/types/type-08-min.png'; 
-import type09min from '@root/assets/images/types/type-09-min.png'; 
-import type01Webp from '@root/assets/images/types/type-01.webp'; 
-import type02Webp from '@root/assets/images/types/type-02.webp'; 
-import type03Webp from '@root/assets/images/types/type-03.webp'; 
-import type04Webp from '@root/assets/images/types/type-04.webp'; 
-import type05Webp from '@root/assets/images/types/type-05.webp'; 
-import type06Webp from '@root/assets/images/types/type-06.webp'; 
-import type07Webp from '@root/assets/images/types/type-07.webp'; 
-import type08minWebp from '@root/assets/images/types/type-08-min.webp'; 
-import type09minWebp from '@root/assets/images/types/type-09-min.webp'; 
+import type08 from '@root/assets/images/types/type-08.png'; 
+import type09 from '@root/assets/images/types/type-09.png'; 
+import type10 from '@root/assets/images/types/type-10.png'; 
+import type11 from '@root/assets/images/types/type-11.png'; 
+import type12 from '@root/assets/images/types/type-12.png'; 
+import type13 from '@root/assets/images/types/type-13.png'; 
+import type14 from '@root/assets/images/types/type-14.png'; 
+import type15 from '@root/assets/images/types/type-15.png'; 
+import type16 from '@root/assets/images/types/type-16.png'; 
+import type17 from '@root/assets/images/types/type-17.png'; 
+import type18 from '@root/assets/images/types/type-18.png'; 
+import type19 from '@root/assets/images/types/type-19.png'; 
+import type20 from '@root/assets/images/types/type-20.png'; 
 
 export default function(){
     const [refMain, setRefMain] = useState(null);
@@ -27,13 +29,15 @@ export default function(){
     const [refRowDown, setRefRowDown] = useState(null);
     const [settings, setSettings] = useState({ inited: false });
 
+    console.log(settings)
+
     const initMoveLine = () => {
         if(!refMain || !refRowUp || !refRowDown){ return; }
-        if(document.readyState !== "complete"){
-            window.addEventListener("load", initMoveLine);
-        }
+        // if(document.readyState !== "complete"){
+        //     window.addEventListener("load", initMoveLine);
+        // }
 
-        const step           = 0.7; // You can change this value to set speed you need.
+        const step           = 0.8; // You can change this value to set speed you need.
         const {top, height}  = refMain.getBoundingClientRect();
         const elementFromTop = top + (window.pageYOffset || document.documentElement.scrollTop);
         const paddingTop     = window.innerHeight; 
@@ -82,100 +86,104 @@ export default function(){
                 <div className="types__row" ref={setRefRowUp}>
                     <div className="types__item min">
                         <picture>
-                            <source srcSet={type08minWebp} type="image/webp" />
-                            <img src={type08min} alt="type-img" />
+                            <img src={type12} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type01Webp} type="image/webp" />
-                            <img src={type01} alt="type-img" />
-                        </picture>
-                    </div>
-                    <div className="types__item">
-                        <picture>
-                            <source srcSet={type02Webp} type="image/webp" />
                             <img src={type02} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type03Webp} type="image/webp" />
                             <img src={type03} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type04Webp} type="image/webp" />
                             <img src={type04} alt="type-img" />
                         </picture>
                     </div>
-                    <div className="types__item">
+                    {/* <div className="types__item">
                         <picture>
-                            <source srcSet={type02Webp} type="image/webp" />
-                            <img src={type02} alt="type-img" />
-                        </picture>
-                    </div>
-                    <div className="types__item">
-                        <picture>
-                            <source srcSet={type07Webp} type="image/webp" />
-                            <img src={type07} alt="type-img" />
-                        </picture>
-                    </div>
-                    <div className="types__item min">
-                        <picture>
-                            <source srcSet={type09minWebp} type="image/webp" />
-                            <img src={type09min} alt="type-img" />
-                        </picture>
-                    </div>
-                </div>
-                <div className="types__row" ref={setRefRowDown}>
-                    <div className="types__item min">
-                        <picture>
-                            <source srcSet={type09minWebp} type="image/webp" />
-                            <img src={type09min} alt="type-img" />
-                        </picture>
-                    </div>
-                    <div className="types__item">
-                        <picture>
-                            <source srcSet={type05Webp} type="image/webp" />
                             <img src={type05} alt="type-img" />
                         </picture>
-                    </div>
+                    </div> */}
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type06Webp} type="image/webp" />
                             <img src={type06} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type02Webp} type="image/webp" />
-                            <img src={type02} alt="type-img" />
-                        </picture>
-                    </div>
-                    <div className="types__item">
-                        <picture>
-                            <source srcSet={type07Webp} type="image/webp" />
                             <img src={type07} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type01Webp} type="image/webp" />
-                            <img src={type01} alt="type-img" />
+                            <img src={type08} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type02Webp} type="image/webp" />
-                            <img src={type02} alt="type-img" />
+                            <img src={type09} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item min">
                         <picture>
-                            <source srcSet={type08minWebp} type="image/webp" />
-                            <img src={type08min} alt="type-img" />
+                            <img src={type10} alt="type-img" />
+                        </picture>
+                    </div>
+                </div>
+                <div className="types__row" ref={setRefRowDown}>                    
+                    <div className="types__item min">
+                        <picture>
+                            <img src={type11} alt="type-img" />
+                        </picture>
+                    </div>
+                    {/* <div className="types__item">
+                        <picture>
+                            <img src={type12} alt="type-img" />
+                        </picture>
+                    </div> */}
+                    <div className="types__item">
+                        <picture>
+                            <img src={type13} alt="type-img" />
+                        </picture>
+                    </div>
+                    <div className="types__item">
+                        <picture>
+                            <img src={type14} alt="type-img" />
+                        </picture>
+                    </div>
+                    <div className="types__item">
+                        <picture>
+                            <img src={type15} alt="type-img" />
+                        </picture>
+                    </div>
+                    <div className="types__item">
+                        <picture>
+                            <img src={type16} alt="type-img" />
+                        </picture>
+                    </div>
+                    <div className="types__item">
+                        <picture>
+                            <img src={type17} alt="type-img" />
+                        </picture>
+                    </div>
+                    <div className="types__item">
+                        <picture>
+                            <img src={type18} alt="type-img" />
+                        </picture>
+                    </div>
+                    <div className="types__item">
+                        <picture>
+                            <img src={type19} alt="type-img" />
+                        </picture>
+                    </div>
+                    <div className="types__item min">
+                        <picture>
+                            <img src={type20} alt="type-img" />
                         </picture>
                     </div>
                 </div>
