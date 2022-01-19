@@ -265,11 +265,13 @@
     border-radius: 50%;
     overflow: hidden;
     display: flex;
+    justify-content: center;
     align-items: flex-end;
     background: #02030F;
 
     img{
         max-width: 100%;
+        max-height: 105%;
     }
 
     @media (max-width: 865px){
