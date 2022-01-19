@@ -9,7 +9,7 @@ import backgroundMobileWebp from '@root/assets/images/xoxo/background@mobile.web
 
 export default function(){
     return (
-        <div className="xoxo">
+        <section className="xoxo">
             <picture>
                 {/* <source srcSet={backgroundMobileWebp} media="(max-width: 991px)" type='image/webp' />
                 <source srcSet={backgroundMobile} media="(max-width: 991px)" type='image/png' />
@@ -33,6 +33,6 @@ export default function(){
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

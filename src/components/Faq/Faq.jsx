@@ -46,7 +46,7 @@ const data = [
 
 export default function(){
     return (
-        <div className="faq" id="faq">
+        <section className="faq" id="faq">
             <h2 className="faq__title">
                 <i></i><i></i><i></i><i></i>
                 <span>Faq</span>
@@ -70,6 +70,6 @@ export default function(){
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

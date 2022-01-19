@@ -14,6 +14,9 @@ import Footer from './components/Footer/Footer';
 import ImNFT from './components/ImNFT/ImNFT';
 import VideoContent from './components/VideoContent/VideoContent';
 import Release from './components/Release/Release';
+import Banner from './components/Banner/Banner';
+import Started from './components/Started/Started';
+import Roadmap from './components/Roadmap/Roadmap';
 
 const App = () => {
     return (
@@ -25,11 +28,14 @@ const App = () => {
             <Avatars />
             <Presentation />
             <Release />
+            <Banner />
+            <Roadmap />
             <Types />
             <Faq />
             <Ticker />
             <Invite />
             <Team />
+            <Started />
             <Footer />
         </Route>
     );

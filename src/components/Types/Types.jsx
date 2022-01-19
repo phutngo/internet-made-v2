@@ -22,10 +22,11 @@ export default function(){
         slideActiveClass: "swiper-slide-active-cls",
         centeredSlides: true,
         loop: true,
+        grabCursor: true
     };
 
     return (
-        <div className="types" id="lookbook" data-lazy-bg="/assets/images/types/background.png">
+        <section className="types" id="lookbook" data-lazy-bg="/assets/images/types/background.png">
             <h2 className="types__title">Lookbook</h2>
             <div className="types__container">
                 <Swiper className="types__slider" {...settings}>
@@ -61,6 +62,6 @@ export default function(){
                     </SwiperSlide>
                 </Swiper>
             </div>
-        </div>
+        </section>
     );
 }

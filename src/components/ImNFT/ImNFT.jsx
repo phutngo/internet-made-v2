@@ -3,10 +3,10 @@ import "./imnft.scss"
 
 export default function(){
     return (
-        <div className="imnft">
+        <section className="imnft">
             <span>INTERNET MADE NFT</span>
             <span>INTERNET MADE NFT</span>
             <span>INTERNET MADE NFT</span>
-        </div>
+        </section>
     );
 }

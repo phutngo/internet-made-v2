@@ -4,7 +4,7 @@ import AvatarsBackground from './AvatarsBackground';
 
 export default function(){
     return (
-        <div className="avatars" data-lazy-bg="/assets/images/avatars/background.png">
+        <section className="avatars" data-lazy-bg="/assets/images/avatars/background.png">
             <AvatarsBackground />
             <div className="avatars__content">
                 <div className="avatars__title">
@@ -24,6 +24,6 @@ export default function(){
                     artists &amp; founders.
                 </p>
             </div>
-        </div>
+        </section>
     );
 }

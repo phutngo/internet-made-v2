@@ -1,0 +1,36 @@
+[
+    {
+        "phase": 1,
+        "image": "/assets/images/roadmap/ph01.png",
+        "title": "Metaverse-ready",
+        "text": "<ul><li>Develop an event space in Decentraland. Holders will be able to display, shop and sell Internet Made NFTs there. <u>Q1 2022</u></li><li>Holders of genesis NFT collection with exclusive traits will get an airdropped metaverse NFT that is also a 3d model. <u>Q2 2022</u></li><li>All our avatars from the genesis collection are made with 3d software, so you will be able to use them in metaverse <u>TBA</u></li></ul>",
+        "color": {
+            "background": "#02030F",
+            "avatar": "#314053",
+            "text": "#FFF"
+        }
+    },
+    {
+        "phase": 2,
+        "image": "/assets/images/roadmap/ph02.png",
+        "title": "Internet Made ecosystem.",
+        "text": "People staking our NFTs will be receiving our token, redeemable for our exclusive digital and physical items, as well as real world events. <u>Q2 2022</u>",
+        "color": {
+            "background": "#FFA133",
+            "avatar": "#1C1C1C",
+            "text": "#FFF"
+        },
+        "inverseWrapper": true
+    },
+    {
+        "phase": 3,
+        "image": "/assets/images/roadmap/ph03.png",
+        "title": "Fashion community",
+        "text": "<ul><li>Physical pieces for community members <u>Q1 2022</u></li><li>Internet Made popups in fashion capitals <u>Q3 2022</u></li> <li>Collaborations with fashion houses &amp; talented creatives <u>Q2 2022</u></li> <li>DAO- Community will be able to participate and decide on our collaborations, funding for talented designers that need capital and platform to release their creations. <u>Q3 2022</u></li></ul>",
+        "color": {
+            "background": "#02030F",
+            "avatar": "#253626",
+            "text": "#FFF"
+        }
+    }
+]

@@ -15,7 +15,7 @@ import PlusButton from '../PlusButton/PlusButton';
 
 export default function(){
     return (
-        <div className="invite">
+        <section className="invite">
             <div className="invite__limiter">                
                 <div className="invite__container container">
                     <img src={rhombus} alt="rhombus" className="invite__rhombus invite__rhombus_1" />
@@ -44,6 +44,6 @@ export default function(){
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

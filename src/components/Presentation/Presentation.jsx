@@ -12,7 +12,7 @@ export default function(){
     };
 
     return ( 
-        <div className="presentation">
+        <section className="presentation">
             <PresentationHat />
                 <div className="presentation__date">
                     <Marquee {...settings}>            
@@ -20,6 +20,6 @@ export default function(){
                     </Marquee>
                 </div>
             <PresentationFooter />
-        </div>
+        </section>
     );
 }

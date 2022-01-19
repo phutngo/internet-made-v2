@@ -1,5 +1,6 @@
 import React, { useState, useEffect }  from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
+import {getData} from '@root/javascript/utils';
 import TeamItem from './TeamItem';
 import "./team.scss"
 
@@ -18,15 +19,8 @@ export default function(){
         setIsSwiper(window.innerWidth <= 768);
     };
 
-    const getData = async () => {
-        const request = await fetch("/json/team.json");
-        const json = await request.json();
-
-        setData(json);
-    };
-
     useEffect(() => {
-        getData();
+        getData('/json/team.json', setData);
 
         window.addEventListener("resize", resizeHandler);
 
@@ -34,7 +28,7 @@ export default function(){
     }, []);
 
     return (
-        <div className="team" id="team">
+        <section className="team" id="team">
             <h2 className="team__title">
                 <i></i><i></i><i></i><i></i>
                 <span>Our team</span>
@@ -56,6 +50,6 @@ export default function(){
                     </div>
                 )}
             </div>
-        </div>
+        </section>
     );
 }

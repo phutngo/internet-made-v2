@@ -9,7 +9,7 @@ export default function(){
     };
 
     return (
-        <div className="ticker">
+        <section className="ticker">
             <div className="ticker__dynamic">
                 <div className="ticker__dynamic-container">
                     <Marquee {...settings}>
@@ -22,6 +22,6 @@ export default function(){
                 </div>
             </div>
             <div className="ticker__static"></div>
-        </div>
+        </section>
     );
 }

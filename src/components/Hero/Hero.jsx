@@ -72,7 +72,7 @@ export default function(){
     };
 
     return (
-        <div className="hero">
+        <section className="hero">
             <div className="hero__back">
                 <picture>
                     <source srcSet={backgroundMobileWebp} media="(max-width: 768px)" type="image/webp" />
@@ -200,6 +200,6 @@ export default function(){
                     <Socials className="social__soc" />
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
