@@ -47,19 +47,19 @@
     height: 54px;
     width: 100%;
     background: transparent;
-    background-image: linear-gradient(to Right, #AE65EF 0, #AE65EF 54px, #000000 54px, #000000 108px);
+    background-image: linear-gradient(to Right, #47C3E7 0, #47C3E7 54px, #000000 54px, #000000 108px);
     background-size: 108px 54px;
     background-repeat: repeat;
 
     @media (max-width: 768px){
         height: 35px;
-        background-image: linear-gradient(to Right, #AE65EF 0, #AE65EF 35px, #000000 35px, #000000 70px);
+        background-image: linear-gradient(to Right, #47C3E7 0, #47C3E7 35px, #000000 35px, #000000 70px);
         background-size: 70px 35px;
     }
 
     @media (max-width: 465px){
         height: 30px;
-        background-image: linear-gradient(to Right, #AE65EF 0, #AE65EF 30px, #000000 30px, #000000 60px);
+        background-image: linear-gradient(to Right, #47C3E7 0, #47C3E7 30px, #000000 30px, #000000 60px);
         background-size: 60px 30px;
     }
 }

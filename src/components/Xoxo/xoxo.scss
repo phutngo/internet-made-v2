@@ -44,13 +44,12 @@
 
     h2{
         @include monument(800){
-            font-size: 45px;
+            font-size: 70px;
             line-height: 1.2;
             /* identical to box height */
+            color: #fff;
 
             text-transform: uppercase;
-
-            -webkit-text-stroke: 2px #FFFFFF;
         }
     }
     p{
@@ -73,6 +72,7 @@
             margin: 58px auto 0;
             font-size: 10px;
             line-height: 1.8;
+            font-weight: 400;
             
             color: #FFFFFF;
         }

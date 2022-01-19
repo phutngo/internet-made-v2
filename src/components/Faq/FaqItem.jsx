@@ -36,9 +36,9 @@ export default function({ question, answer }){
     }, [parentRef]);
 
     return (
-        <div className={classNames("faq-item", {opened: open})} onClick={clickHandler} ref={setParentRef}>
-            <div className="faq-item__question">{question} <i></i></div>
-            <p className="faq-item__answer" ref={setRef} style={styles}>{answer}</p>
+        <div className={classNames("faq-item", {opened: open})} ref={setParentRef}>
+            <div className="faq-item__question" onClick={clickHandler}>{question} <i></i></div>
+            <p className="faq-item__answer" ref={setRef} style={styles}>{typeof answer === "string" ? answer : answer()}</p>
         </div>
     );
 }

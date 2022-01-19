@@ -81,7 +81,7 @@
             letter-spacing: 0.04em;
             text-transform: uppercase;
 
-            color: #7CE37C;
+            color: #fff;
         }
     }
 
@@ -211,22 +211,8 @@
     position: relative;
     padding: 1.6px;
     @include clipPathBorder;
-    background: #7CE37C;    
+    background: #fff;    
     overflow: hidden;
-
-    &::before{
-        content: "";
-        display: block;
-        width: calc(100% - 1.6px);
-        height: calc(100% - 3.2px);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background:#121727;
-        z-index: 1;
-        @include clipPathBorder;
-    }
 }
 .faq__content{ 
     position: relative; 
@@ -248,14 +234,15 @@
 
 // Item
 .faq-item{
-    cursor: pointer;
-    padding: 26px 0 28px;
-    border-bottom: 0.583363px solid rgba(255, 255, 255, 0.25);
+    padding-bottom: 0;
+    border-bottom: 0.583363px solid rgba(0, 0, 0, 0.25);
+    transition: padding .45s ease;
 
     &.opened{
+        padding-bottom: 28px;
+        
         .faq-item__question i{
             transform: rotate(-45deg);
-
         }
     }
 
@@ -267,15 +254,16 @@
     }    
 }
 .faq-item__question{
-
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 27px 0;
 
     @include monument(800){
         font-size: 20px;
         line-height: 1;
-        color: #FFFFFF;
+        color: #000;
     } 
 
     i{
@@ -291,7 +279,7 @@
         &::before{
             content: "";
             display: block;
-            background: #fff;
+            background: #000;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -321,12 +309,17 @@
     }
 }
 .faq-item__answer{
-    margin-top: 22px;
+    @include jakarta(400);
     font-size: 15.0178px;
     line-height: 1.5;    
     color: #979797;
     overflow: hidden;
     transition: height .45s ease, margin .45s ease, opacity .45s;
+
+    a {
+        display: inline;
+        color: rgb(36, 105, 209);
+    }
 
     @media (max-width: 768px){
         font-size: 13px;

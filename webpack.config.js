@@ -63,6 +63,12 @@ module.exports = {
                     from: "**/*.{avi,mkv,mp4,webm,ogf}",
                     to: "assets/videos",
                     noErrorOnMissing: true
+                },
+                {
+                    context: "json",
+                    from: "**/*.json",
+                    to: "json",
+                    noErrorOnMissing: true
                 }
             ]
         }),

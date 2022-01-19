@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 import "./presentationhat.scss"
 
 // Images
-import logo from '@root/assets/images/hero/logo.png';
+import logo from '@root/assets/images/logos-black.png';
 
 export default function(){
     const settings =  {

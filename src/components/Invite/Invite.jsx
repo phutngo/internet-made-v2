@@ -30,12 +30,7 @@ export default function(){
                         <div className="invite__content">
                             <div className="invite__left">
                                 <h1>Join Our Discord</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Non id vestibulum, fames etiam. Pellentesque enim vitae leo 
-                                    faucibus eu. Dolor elit ac massa.
-                                </p>
-                                <PlusButton className="invite__btn">
+                                <PlusButton className="invite__btn" href="https://discord.gg/mUtyPpSHhh" target="_blank">
                                     <span>Discord</span>
                                     <img src={discord} alt="discord" />
                                 </PlusButton>

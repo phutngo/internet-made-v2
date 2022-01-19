@@ -6,7 +6,7 @@ import Marquee from 'react-fast-marquee';
 
 export default function(){
     const settings =  {
-        speed: 100,
+        speed: 84,
         gradient: false,
         direction: "left",
     };
@@ -15,7 +15,9 @@ export default function(){
         <div className="presentation">
             <PresentationHat />
                 <div className="presentation__date">
-                    <span>Coming this February 2022</span>
+                    <Marquee {...settings}>            
+                        <span>Coming this February 2022</span>
+                    </Marquee>
                 </div>
             <PresentationFooter />
         </div>

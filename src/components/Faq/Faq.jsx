@@ -9,53 +9,38 @@ import FaqItem from './FaqItem';
 const data = [
     {
         id: 0, 
-        question: "1. What is an NFT?", 
-        answer:  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum."
+        question: "1. How to mint our NFT?", 
+        answer: () => (<React.Fragment>You will be able to mint Internet Made NFT on <a href="www.internetmadenft.com">www.internetmadenft.com</a> website. When you click the mint button you will be redirected to our minting subpage. If you have our whitelist role, you will need to whitelist your eth wallet (such as MetaMask) address, only then you are able to participate in the presale. Public sale will be open to everyone. </React.Fragment>)
     },
     {
         id: 1, 
-        question: "2. How to purchase Internet Made NFT?", 
-        answer:  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum."
+        question: "2. When is the mint?", 
+        answer: "TBA"
     },
     {
         id: 2, 
-        question: "3. How to buy on Presale?", 
-        answer:  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum."
+        question: "3. How much will mint be?", 
+        answer: "TBA"
     },
     {
         id: 3, 
-        question: "4. Total supply/distribution?", 
-        answer:  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum."
+        question: "4. How many can you mint?", 
+        answer: "You will be able to mint 2 NFTs on presale and 2 NFTs on public sale. If you are whitelisted you are guaranteed to get the NFT."
     },
     {
         id: 4, 
-        question: "5. Maximum mint per wallet?", 
-        answer:  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum."
+        question: "5. How can I get whitelisted?", 
+        answer: "Because we want to create a genuine and close-knit community, we don’t give WL roles for leveling on discord. We have a worldwide moderation team which is giving out WL roles to people who are genuinely interacting with others, making fan-art & contributing to the IM community."
     },
     {
         id: 5, 
-        question: "6. Are there different rarities?", 
-        answer:  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum."
+        question: "6. Which blockchain are you using?", 
+        answer: "Our NFTs will be stored as tokens on Ethereum blockchain, while avatar pictures are stored on IPFS."
     },
     {
         id: 6, 
-        question: "7. Which Blockchain and contract address?", 
-        answer:  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum."
-    },
-    {
-        id: 7, 
-        question: "8. What is a Fashion Accelerator?", 
-        answer:  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum."
-    },
-    {
-        id: 8, 
-        question: "9. What is F&F?", 
-        answer:  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum."
-    },
-    {
-        id: 9, 
-        question: "10. Will there be benefits to holding multiple Internet Made NFT’s?", 
-        answer:  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis duis suscipit senectus varius nullam orci adipiscing. Diam justo netus sit urna, fermentum."
+        question: "7. What can IM NFT holders expect in the future?", 
+        answer: "We are constantly listening to our community & like we already pointed out, our vision & plan is not final. Having said that, we will be creating an ecosystem for IM NFT holders - staking & DAO."
     },
 ]
 

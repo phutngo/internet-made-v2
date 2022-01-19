@@ -1,0 +1,466 @@
+[
+    {
+        "id": 0,
+        "avatar": "/assets/images/team/personaje-01.png",
+        "name": "Tim Brdnik",
+        "title": "Founders",
+        "description": "Former Facebook ads ninja. Misfit, rebel & big fashion advocate.",
+        "socials": {
+            "twitter": "https://twitter.com/timbrdnik",
+            "instagram": "https://www.instagram.com/timbrdnik/",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#6B3189",
+            "avatar": "#48205C"
+        }
+    },
+    {
+        "id": 1,
+        "avatar": "/assets/images/team/personaje-01.png",
+        "name": "Rok Božič",
+        "title": "Founders",
+        "description": "Grew up on the internet, in web3 from 2017. Creative with experience in design, video & marketing.",
+        "socials": {
+            "twitter": "https://twitter.com/bozicrok",
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#6B3189",
+            "avatar": "#48205C"
+        }
+    },
+    {
+        "id": 2,
+        "avatar": "/assets/images/team/personaje-01.png",
+        "name": "Andrej P",
+        "title": "Founders",
+        "description": "Vitapur Ecommerce group in 12+ countries. 300+ Employees. Working for physical textile to transform to digital.",
+        "socials": {
+            "twitter": null,
+            "instagram": null,
+            "linkedIn": "https://www.linkedin.com/in/andrejpodgorsek/"
+        },
+        "color": {
+            "background": "#6B3189",
+            "avatar": "#48205C"
+        }
+    },
+    {
+        "id": 3,
+        "avatar": "/assets/images/team/personaje-01.png",
+        "name": "Miran P",
+        "title": "Founders",
+        "description": "Accounting & Tax, 300+ Employees. Deeply involved with Crypto for the past 5 years. Whale by nature.",
+        "socials": {
+            "twitter": null,
+            "instagram": null,
+            "linkedIn": "https://www.linkedin.com/in/miranpikovnik/"
+        },
+        "color": {
+            "background": "#6B3189",
+            "avatar": "#48205C"
+        }
+    },
+    {
+        "id": 4,
+        "avatar": "/assets/images/team/personaje-02.png",
+        "name": "Nik Preston",
+        "title": "Lead Designer",
+        "description": "Digital handy man lvl 152. Triggered by bad design, unless I make it. #PogChamp Halo player.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#552386",
+            "avatar": "#3B195C"
+        }
+    },
+    {
+        "id": 5,
+        "avatar": "/assets/images/team/personaje-03.png",
+        "name": "Phu Ngo",
+        "title": "Technical Lead",
+        "description": "Ex TPM, now dApp dev diving headfirst into the Metaverse.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#381C3F",
+            "avatar": "#211125"
+        }
+    },
+    {
+        "id": 6,
+        "avatar": "/assets/images/team/personaje-04.png",
+        "name": "Qclay design",
+        "title": "Development",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#728F33",
+            "avatar": "#546925"
+        }
+    },
+    {
+        "id": 7,
+        "avatar": "/assets/images/team/personaje-05.png",
+        "name": "Kristian",
+        "title": "3D Designer",
+        "description": "3D artist, lowkey a Blender fanboy. Playing with 1's and 0's since 2016.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#2E452B",
+            "avatar": "#3B5938"
+        }
+    },
+    {
+        "id": 8,
+        "avatar": "/assets/images/team/personaje-06.png",
+        "name": "Lara Ponebšek",
+        "title": "Creative Director",
+        "description": "From barbie fashion shows to living Lara in Paris vibes. If a twist is not there, the design is not mine.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#DA9921",
+            "avatar": "#B5771B"
+        }
+    },
+    {
+        "id": 9,
+        "avatar": "/assets/images/team/personaje-06.png",
+        "name": "Hugo Skulje",
+        "title": "Creative Director",
+        "description": "Not a designer. I make clothes that are available solely as emotional perception.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#DA9921",
+            "avatar": "#B5771B"
+        }
+    },
+    {
+        "id": 10,
+        "avatar": "/assets/images/team/personaje-06.png",
+        "name": "Lara Pikovnik",
+        "title": "Creative Director",
+        "description": "Retired rhythmic gymnast. Now creative director, interested in fashion since 2002.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#DA9921",
+            "avatar": "#B5771B"
+        }
+    },
+    {
+        "id": 11,
+        "avatar": "/assets/images/team/personaje-07.png",
+        "name": "Tadej Ancin",
+        "title": "3D Figurines",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#A38E1D",
+            "avatar": "#726313"
+        }
+    },
+    {
+        "id": 12,
+        "avatar": "/assets/images/team/personaje-08.png",
+        "name": "Maj Vrenko",
+        "title": "Marketing",
+        "description": "A visual effects artist that has an obsession with particles. I Want to animate the real world.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#BD3636",
+            "avatar": "#841515"
+        }
+    },
+    {
+        "id": 13,
+        "avatar": "/assets/images/team/personaje-08.png",
+        "name": "Deaan",
+        "title": "Marketing",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#BD3636",
+            "avatar": "#841515"
+        }
+    },
+    {
+        "id": 14,
+        "avatar": "/assets/images/team/personaje-08.png",
+        "name": "Luc Primožičnik",
+        "title": "Marketing",
+        "description": "Sport athlete doing digital marketing. Bought bitcoin in 2017 for the first time at 20k.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#BD3636",
+            "avatar": "#841515"
+        }
+    },
+    {
+        "id": 15,
+        "avatar": "/assets/images/team/personaje-08.png",
+        "name": "Nik Razoršek",
+        "title": "Marketing",
+        "description": "Problem solver. College dropout. If you’re not on your grind 24/7 I'll beat you.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#BD3636",
+            "avatar": "#841515"
+        }
+    },
+    {
+        "id": 16,
+        "avatar": "/assets/images/team/personaje-09.png",
+        "name": "Bor Jarh",
+        "title": "AR DEVELOPMENT",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#C17424",
+            "avatar": "#855018"
+        }
+    },
+    {
+        "id": 17,
+        "avatar": "/assets/images/team/personaje-09.png",
+        "name": "Rok Popovič",
+        "title": "AR DEVELOPMENT",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#C17424",
+            "avatar": "#855018"
+        }
+    },
+    {
+        "id": 18,
+        "avatar": "/assets/images/team/personaje-10.png",
+        "name": "Terah Mills",
+        "title": "Discord Team",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#404040",
+            "avatar": "#292929"
+        }
+    },
+    {
+        "id": 19,
+        "avatar": "/assets/images/team/personaje-10.png",
+        "name": "Jack",
+        "title": "Discord Team",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#404040",
+            "avatar": "#292929"
+        }
+    },
+    {
+        "id": 20,
+        "avatar": "/assets/images/team/personaje-11.png",
+        "name": "Badam",
+        "title": "Moderator",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#793C58",
+            "avatar": "#4B2838"
+        }
+    },
+    {
+        "id": 21,
+        "avatar": "/assets/images/team/personaje-11.png",
+        "name": "Luicville",
+        "title": "Moderator",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#793C58",
+            "avatar": "#4B2838"
+        }
+    },
+    {
+        "id": 22,
+        "avatar": "/assets/images/team/personaje-11.png",
+        "name": "Anaximillian",
+        "title": "Moderator",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#793C58",
+            "avatar": "#4B2838"
+        }
+    },
+    {
+        "id": 23,
+        "avatar": "/assets/images/team/personaje-11.png",
+        "name": "Kermis",
+        "title": "Moderator",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#793C58",
+            "avatar": "#4B2838"
+        }
+    },
+    {
+        "id": 24,
+        "avatar": "/assets/images/team/personaje-11.png",
+        "name": "Anaximillian",
+        "title": "Moderator",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#793C58",
+            "avatar": "#4B2838"
+        }
+    },
+    {
+        "id": 25,
+        "avatar": "/assets/images/team/personaje-11.png",
+        "name": "Luicville",
+        "title": "Moderator",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#793C58",
+            "avatar": "#4B2838"
+        }
+    },
+    {
+        "id": 26,
+        "avatar": "/assets/images/team/personaje-11.png",
+        "name": "Badam",
+        "title": "Moderator",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#793C58",
+            "avatar": "#4B2838"
+        }
+    },
+    {
+        "id": 27,
+        "avatar": "/assets/images/team/personaje-11.png",
+        "name": "Jocey.eth",
+        "title": "Moderator",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#793C58",
+            "avatar": "#4B2838"
+        }
+    },
+    {
+        "id": 28,
+        "avatar": "/assets/images/team/personaje-11.png",
+        "name": "French Boy",
+        "title": "Moderator",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "socials": {
+            "twitter": null,
+            "instagram": "......",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#793C58",
+            "avatar": "#4B2838"
+        }
+    }
+]

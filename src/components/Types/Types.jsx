@@ -73,7 +73,7 @@ export default function(){
 
     return (
         <div className="types">
-            <h2 className="types__title">Types</h2>
+            <h2 className="types__title">Lookbook</h2>
             <div className="types__container" ref={setRefMain}>
                 <div className="types__row" ref={setRefRowUp}>
                     <div className="types__item min">

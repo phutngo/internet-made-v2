@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Autoplay, Parallax} from 'swiper';
 import Socials from '../Socials/Socials';
@@ -113,12 +112,12 @@ export default function(){
                 <div className="hero__side">
                     <img src={logo} alt="logo" className="hero__logo" />
                     <nav className="hero__nav start" onScroll={scrollNav}>
-                        <NavLink to="/page1">How it started</NavLink>
-                        <NavLink to="/page2">Faq</NavLink>
-                        <NavLink to="/page3">Team</NavLink>
-                        <NavLink to="/page3">Lookbook</NavLink>
-                        <NavLink to="/page3">Technical Details</NavLink>
-                        <NavLink to="/page3">Vision</NavLink>
+                        <a href="#faq">Faq</a>
+                        <a href="#team">Team</a>
+                        <a href="#lookbook">Lookbook</a>
+                        <a href="#roadmap">Roadmap</a>
+                        <a href="#details">Technical Details</a>
+                        <a href="#vision">Vision</a>
                     </nav>
                 </div>
                 <div className="hero__info">
