@@ -12,8 +12,12 @@
 html{
     scroll-behavior: smooth;
 }
-body{
+body,
+.app{
+    max-width: 100%;
     overflow-x: hidden;
+}
+body{
     background: #02030F;
 
     @include monument(400);
