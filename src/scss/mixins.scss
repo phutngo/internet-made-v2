@@ -36,6 +36,11 @@
     font-weight: $weight;
     @content;
 }
+@mixin mazzard($weight: 400){
+    font-family: "Mazzard", sans-serif;
+    font-weight: $weight;
+    @content;
+}
 @mixin neutron($weight: 400){
     font-family: "NeutronDance-Super-Italic", sans-serif;
     font-weight: $weight;

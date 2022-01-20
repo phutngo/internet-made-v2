@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Autoplay, Parallax} from 'swiper';
 import Socials from '../Socials/Socials';
-import PlusButton from '../PlusButton/PlusButton';
+import Header from '../Header/Header';
 import "./hero.scss";
 
 // Images
@@ -31,6 +31,7 @@ import item03Webp from '@root/assets/images/hero/item-03.webp';
 import item04 from '@root/assets/images/hero/item-04.png';
 import item04Webp from '@root/assets/images/hero/item-04.webp';
 import internetMade from '@root/assets/images/hero/internet-made.png';
+import MintButton from '../MintButton/MintButton';
 
 function setClassActive(index, current){
     return index === current 
@@ -40,13 +41,6 @@ function setClassActive(index, current){
 
 export default function(){
     const [backgroundIndex, setBackgroundIndex] = useState(null);
-    const [isButtom, setIsBottom] = useState(false);
-
-    const scrollNav = (e) => {
-        console.log("scrollTop", e.target.scrollTop);
-        console.log("scrollHeight", e.target.scrollHeight);
-        console.log("height", e.target.offsetHeight);
-    };
 
     const settings = {
         slidesPerView: 3,
@@ -98,20 +92,10 @@ export default function(){
                 </picture>
             </div>
             <div className="hero__container">
-                <header className="header">
-                    <button className="header__burgermenu">
-                        <span></span><span></span><span></span>
-                    </button>
-                    <PlusButton 
-                        className="hero__mint hero__mint_mobile"
-                        onClick={console.log.bind(null)}
-                    >
-                        <span>Mint</span>
-                    </PlusButton>
-                </header>
+                <Header />
                 <div className="hero__side">
                     <img src={logo} alt="logo" className="hero__logo" />
-                    <nav className="hero__nav start" onScroll={scrollNav}>
+                    <nav className="hero__nav start">
                         <a href="#faq">Faq</a>
                         <a href="#team">Team</a>
                         <a href="#lookbook">Lookbook</a>
@@ -190,13 +174,7 @@ export default function(){
                     </div>
                 </div>
                 <div className="hero__socials">
-                    <PlusButton 
-                        className="hero__mint"
-                        onClick={console.log.bind(null)}
-                    >
-                        <span className='hide'>Mint</span>
-                        <span className='show'>Soon</span>
-                    </PlusButton>
+                    <MintButton className="hero__mint" />                
                     <Socials className="social__soc" />
                 </div>
             </div>

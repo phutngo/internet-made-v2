@@ -1,43 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { hot } from 'react-hot-loader/root';
-import { Route } from 'react-router';
-import Avatars from './components/Avatars/Avatars';
-import Faq from './components/Faq/Faq';
-import Hero from './components/Hero/Hero';
-import Invite from './components/Invite/Invite';
-import Presentation from './components/Presentation/Presentation';
-import Team from './components/Team/Team';
-import Ticker from './components/Ticker/Ticker';
-import Types from './components/Types/Types';
-import Xoxo from './components/Xoxo/Xoxo';
-import Footer from './components/Footer/Footer';
-import ImNFT from './components/ImNFT/ImNFT';
-import VideoContent from './components/VideoContent/VideoContent';
-import Release from './components/Release/Release';
-import Banner from './components/Banner/Banner';
-import Started from './components/Started/Started';
-import Roadmap from './components/Roadmap/Roadmap';
+import { Switch, Route, Redirect } from 'react-router';
+import Main from '@root/pages/Main';
+import Menu from '@root/components/Menu/Menu';
+import Mint from '@root/pages/Mint';
+import { Context, value } from './Context';
 
 const App = () => {
+    const [ctx, setCtx] = useState(value);
+    
+    useEffect(() => {
+        document.body.style.overflow        = ctx.openMenu !== false ? "hidden" : "";
+    }, [ctx]);
+
     return (
-        <Route path="/">
-            <Hero />
-            <ImNFT />
-            <VideoContent />
-            <Xoxo />
-            <Avatars />
-            <Presentation />
-            <Release />
-            <Banner />
-            <Roadmap />
-            <Types />
-            <Faq />
-            <Ticker />
-            <Invite />
-            <Team />
-            <Started />
-            <Footer />
-        </Route>
+        <Context.Provider value={[ctx, setCtx]}>
+            <Switch>
+                <Route path="/" component={Main} exact />
+                <Route path="/mint" component={Mint} />
+                <Redirect to="/" />
+            </Switch>
+            <Menu />
+        </Context.Provider >
     );
 }
 export default App;

@@ -10,7 +10,7 @@ import instagram from '@root/assets/images/socials/instagram.png';
 export default function({ className }){
     return (
         <div className={classNames("socials", { [className]: !!className })}>
-            <a href="https://twitter.com/InternetMadeNF" className="socials__link">
+            <a href="https://twitter.com/InternetMadeNFT" className="socials__link">
                 <img src={twitter} alt="twitter" />
             </a>
             <a href="https://discord.gg/mUtyPpSHhh" className="socials__link">
