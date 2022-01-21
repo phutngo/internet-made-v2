@@ -100,7 +100,7 @@ export default function(){
                         <a href="#team">Team</a>
                         <a href="#lookbook">Lookbook</a>
                         <a href="#roadmap">Roadmap</a>
-                        <a href="#details">Technical Details</a>
+                        <a href="#collection">Initial Collection</a>
                         <a href="#vision">Vision</a>
                     </nav>
                 </div>

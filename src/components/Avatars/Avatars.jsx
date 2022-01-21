@@ -4,7 +4,7 @@ import AvatarsBackground from './AvatarsBackground';
 
 export default function(){
     return (
-        <section className="avatars" data-lazy-bg="/assets/images/avatars/background.png">
+        <section className="avatars" data-lazy-bg="/assets/images/avatars/background.png" id="collection">
             <AvatarsBackground />
             <div className="avatars__content">
                 <div className="avatars__title">

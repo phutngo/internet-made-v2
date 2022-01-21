@@ -5,10 +5,7 @@
             "png": "/assets/images/team/personaje-01.png",
             "webp": "/assets/images/team/personaje-01.webp"
         },
-        "realImage": {
-            "png": "/assets/images/placeholder-image.png",
-            "webp": null
-        },
+        "realImage": null,
         "name": "Tim Brdnik",
         "title": "Founders",
         "description": "Former Facebook ads ninja. Misfit, rebel & big fashion advocate.",
@@ -29,7 +26,7 @@
             "webp": "/assets/images/team/personaje-01.webp"
         },
         "realImage": {
-            "png": "/assets/images/placeholder-image.png",
+            "png": null,
             "webp": null
         },
         "name": "Rok Božič",
@@ -37,7 +34,7 @@
         "description": "Grew up on the internet, in web3 from 2017. Creative with experience in design, video & marketing.",
         "socials": {
             "twitter": "https://twitter.com/bozicrok",
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
@@ -106,7 +103,7 @@
         "description": "Digital handy man lvl 152. Triggered by bad design, unless I make it. #PogChamp Halo player.",
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
@@ -129,7 +126,7 @@
         "description": "Ex TPM, now dApp dev diving headfirst into the Metaverse.",
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
@@ -149,11 +146,12 @@
         },
         "name": "Qclay design",
         "title": "Development",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "description": "<img src='/assets/images/qclay.png' alt='qclay.design' class='qclay' />",
         "socials": {
             "twitter": null,
-            "instagram": "......",
-            "linkedIn": null
+            "instagram": "https://www.instagram.com/qclaydesign/",
+            "linkedIn": null,
+            "tiktok": "https://www.tiktok.com/@qclay.design"
         },
         "color": {
             "background": "#728F33",
@@ -175,7 +173,7 @@
         "description": "3D artist, lowkey a Blender fanboy. Playing with 1's and 0's since 2016.",
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
@@ -198,7 +196,7 @@
         "description": "From barbie fashion shows to living Lara in Paris vibes. If a twist is not there, the design is not mine.",
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
@@ -221,7 +219,7 @@
         "description": "Not a designer. I make clothes that are available solely as emotional perception.",
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
@@ -244,7 +242,7 @@
         "description": "Retired rhythmic gymnast. Now creative director, interested in fashion since 2002.",
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
@@ -264,10 +262,10 @@
         },
         "name": "Tadej Ancin",
         "title": "3D Figurines",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "description": null,
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
@@ -290,7 +288,7 @@
         "description": "A visual effects artist that has an obsession with particles. I Want to animate the real world.",
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
@@ -310,10 +308,10 @@
         },
         "name": "Deaan",
         "title": "Marketing",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "description": null,
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
@@ -336,7 +334,7 @@
         "description": "Sport athlete doing digital marketing. Bought bitcoin in 2017 for the first time at 20k.",
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
@@ -359,7 +357,7 @@
         "description": "Problem solver. College dropout. If you’re not on your grind 24/7 I'll beat you.",
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
@@ -379,10 +377,10 @@
         },
         "name": "Bor Jarh",
         "title": "AR DEVELOPMENT",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "description": null,
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
@@ -402,10 +400,10 @@
         },
         "name": "Rok Popovič",
         "title": "AR DEVELOPMENT",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "description": null,
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
@@ -425,10 +423,10 @@
         },
         "name": "Terah Mills",
         "title": "Discord Team",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "description": null,
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
@@ -448,10 +446,10 @@
         },
         "name": "Jack",
         "title": "Discord Team",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "description": null,
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
@@ -462,8 +460,8 @@
     {
         "id": 20,
         "avatar": {
-            "png": "/assets/images/team/personaje-11.png",
-            "webp": "/assets/images/team/personaje-11.webp"
+            "png": "/assets/images/team/personaje-12.png",
+            "webp": "/assets/images/team/personaje-12.webp"
         },
         "realImage": {
             "png": "/assets/images/placeholder-image.png",
@@ -471,22 +469,22 @@
         },
         "name": "Badam",
         "title": "Moderator",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "description": null,
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
-            "background": "#793C58",
-            "avatar": "#4B2838"
+            "background": "#605F4A",
+            "avatar": "#39392C"
         }
     },
     {
         "id": 21,
         "avatar": {
-            "png": "/assets/images/team/personaje-11.png",
-            "webp": "/assets/images/team/personaje-11.webp"
+            "png": "/assets/images/team/personaje-12.png",
+            "webp": "/assets/images/team/personaje-12.webp"
         },
         "realImage": {
             "png": "/assets/images/placeholder-image.png",
@@ -494,22 +492,22 @@
         },
         "name": "Luicville",
         "title": "Moderator",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "description": null,
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
-            "background": "#793C58",
-            "avatar": "#4B2838"
+            "background": "#605F4A",
+            "avatar": "#39392C"
         }
     },
     {
         "id": 22,
         "avatar": {
-            "png": "/assets/images/team/personaje-11.png",
-            "webp": "/assets/images/team/personaje-11.webp"
+            "png": "/assets/images/team/personaje-12.png",
+            "webp": "/assets/images/team/personaje-12.webp"
         },
         "realImage": {
             "png": "/assets/images/placeholder-image.png",
@@ -517,22 +515,22 @@
         },
         "name": "Anaximillian",
         "title": "Moderator",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "description": null,
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
-            "background": "#793C58",
-            "avatar": "#4B2838"
+            "background": "#605F4A",
+            "avatar": "#39392C"
         }
     },
     {
         "id": 23,
         "avatar": {
-            "png": "/assets/images/team/personaje-11.png",
-            "webp": "/assets/images/team/personaje-11.webp"
+            "png": "/assets/images/team/personaje-12.png",
+            "webp": "/assets/images/team/personaje-12.webp"
         },
         "realImage": {
             "png": "/assets/images/placeholder-image.png",
@@ -540,22 +538,22 @@
         },
         "name": "Kermis",
         "title": "Moderator",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "description": null,
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
-            "background": "#793C58",
-            "avatar": "#4B2838"
+            "background": "#605F4A",
+            "avatar": "#39392C"
         }
     },
     {
         "id": 24,
         "avatar": {
-            "png": "/assets/images/team/personaje-11.png",
-            "webp": "/assets/images/team/personaje-11.webp"
+            "png": "/assets/images/team/personaje-12.png",
+            "webp": "/assets/images/team/personaje-12.webp"
         },
         "realImage": {
             "png": "/assets/images/placeholder-image.png",
@@ -563,22 +561,22 @@
         },
         "name": "Anaximillian",
         "title": "Moderator",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "description": null,
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
-            "background": "#793C58",
-            "avatar": "#4B2838"
+            "background": "#605F4A",
+            "avatar": "#39392C"
         }
     },
     {
         "id": 25,
         "avatar": {
-            "png": "/assets/images/team/personaje-11.png",
-            "webp": "/assets/images/team/personaje-11.webp"
+            "png": "/assets/images/team/personaje-12.png",
+            "webp": "/assets/images/team/personaje-12.webp"
         },
         "realImage": {
             "png": "/assets/images/placeholder-image.png",
@@ -586,22 +584,22 @@
         },
         "name": "Luicville",
         "title": "Moderator",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "description": null,
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
-            "background": "#793C58",
-            "avatar": "#4B2838"
+            "background": "#605F4A",
+            "avatar": "#39392C"
         }
     },
     {
         "id": 26,
         "avatar": {
-            "png": "/assets/images/team/personaje-11.png",
-            "webp": "/assets/images/team/personaje-11.webp"
+            "png": "/assets/images/team/personaje-12.png",
+            "webp": "/assets/images/team/personaje-12.webp"
         },
         "realImage": {
             "png": "/assets/images/placeholder-image.png",
@@ -609,22 +607,22 @@
         },
         "name": "Badam",
         "title": "Moderator",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "description": null,
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
-            "background": "#793C58",
-            "avatar": "#4B2838"
+            "background": "#605F4A",
+            "avatar": "#39392C"
         }
     },
     {
         "id": 27,
         "avatar": {
-            "png": "/assets/images/team/personaje-11.png",
-            "webp": "/assets/images/team/personaje-11.webp"
+            "png": "/assets/images/team/personaje-12.png",
+            "webp": "/assets/images/team/personaje-12.webp"
         },
         "realImage": {
             "png": "/assets/images/placeholder-image.png",
@@ -632,22 +630,22 @@
         },
         "name": "Jocey.eth",
         "title": "Moderator",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "description": null,
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
-            "background": "#793C58",
-            "avatar": "#4B2838"
+            "background": "#605F4A",
+            "avatar": "#39392C"
         }
     },
     {
         "id": 28,
         "avatar": {
-            "png": "/assets/images/team/personaje-11.png",
-            "webp": "/assets/images/team/personaje-11.webp"
+            "png": "/assets/images/team/personaje-12.png",
+            "webp": "/assets/images/team/personaje-12.webp"
         },
         "realImage": {
             "png": "/assets/images/placeholder-image.png",
@@ -655,15 +653,15 @@
         },
         "name": "French Boy",
         "title": "Moderator",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non id vestibulum.",
+        "description": null,
         "socials": {
             "twitter": null,
-            "instagram": "......",
+            "instagram": null,
             "linkedIn": null
         },
         "color": {
-            "background": "#793C58",
-            "avatar": "#4B2838"
+            "background": "#605F4A",
+            "avatar": "#39392C"
         }
     }
 ]

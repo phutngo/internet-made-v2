@@ -130,8 +130,8 @@ export default function(){
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type04Webp} type="image/webp" />
-                            <img src={type04} alt="type-img" />
+                            <source srcSet={type20Webp} type="image/webp" />
+                            <img src={type20} alt="type-img" />
                         </picture>
                     </div>
                     {/* <div className="types__item">
@@ -186,8 +186,8 @@ export default function(){
                     </div> */}
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type13Webp} type="image/webp" />
-                            <img src={type13} alt="type-img" />
+                            <source srcSet={type02Webp} type="image/webp" />
+                            <img src={type02} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
