@@ -8,23 +8,27 @@ import "./menu.scss"
 export default function(){
     const [ctx, setCtx] = useContext(Context);
 
+    const closeMenu = () => {
+        setCtx({...ctx, openMenu: false});
+    };
+
     return (
         <div className={classNames("menu", {opened: ctx.openMenu})}>
             <div className="menu__wrapper">
                 <header className="menu__header">
                     <MintButton className="hero__mint menu__mint" />
-                    <button className="menu__cross" onClick={setCtx.bind(null, {...ctx, openMenu: false})}></button>
+                    <button className="menu__cross" onClick={closeMenu}></button>
                 </header>
                 <div className="menu__body">
                     <span className="menu-title">Menu</span>
                     <nav className="menu__nav">
-                        <a href="#">Vision</a>
-                        <a href="#">Initial Collection</a>
-                        <a href="#">Lookbook</a>
-                        <a href="#">Team</a>
-                        <a href="#">Roadmap</a>
-                        <a href="#">F.A.Q.</a>
-                        <a href="#">How it started</a>
+                        <a onClick={closeMenu} href="#xoxo">Vision</a>
+                        <a onClick={closeMenu} href="#collection">Initial Collection</a>
+                        <a onClick={closeMenu} href="#lookbook">Lookbook</a>
+                        <a onClick={closeMenu} href="#team">Team</a>
+                        <a onClick={closeMenu} href="#roadmap">Roadmap</a>
+                        <a onClick={closeMenu} href="#faq">F.A.Q.</a>
+                        <a onClick={closeMenu} href="#howitstarted">How it started</a>
                     </nav>
                 </div>
                 <footer className="menu__footer">

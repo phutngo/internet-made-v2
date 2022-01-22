@@ -40,22 +40,22 @@ export default function({ name, title, description, realImage, avatar = {}, colo
                     </div>
                     {isSocials && <div className="team-item__socials">
                         {socials.twitter && (
-                            <a href={socials.twitter} className="team-item__socials-link">
+                            <a href={socials.twitter} className="team-item__socials-link" target="_blank">
                                 <img src={twitterIcon} alt="icon" />
                             </a>
                         )}
                         {socials.instagram && (
-                            <a href={socials.instagram} className="team-item__socials-link">
+                            <a href={socials.instagram} className="team-item__socials-link" target="_blank">
                                 <img src={instagramIcon} alt="icon" />
                             </a>
                         )}
                         {socials.linkedIn && (
-                            <a href={socials.linkedIn} className="team-item__socials-link">
+                            <a href={socials.linkedIn} className="team-item__socials-link" target="_blank">
                                 <img src={linkedInIcon} alt="icon" />
                             </a>
                         )}
                         {socials.tiktok && (
-                            <a href={socials.tiktok} className="team-item__socials-link">
+                            <a href={socials.tiktok} className="team-item__socials-link" target="_blank">
                                 <img src={tiktokIcon} alt="icon" />
                             </a>
                         )}

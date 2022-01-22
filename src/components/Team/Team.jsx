@@ -5,26 +5,29 @@ import TeamItem from './TeamItem';
 import "./team.scss"
 
 export default function(){
-    const [isSwiper, setIsSwiper] = useState(window.innerWidth <= 768);
+    const [isSwiper, setIsSwiper] = useState(false);
     const [data, setData] = useState([]);
 
     const settings = {
         slidesPerView: 3,
         loop: true,
         centeredSlides: true,
-        initialSlide: 1
+        observe: true,
+        observeParents: true
     };
 
     const resizeHandler = () => {
-        setIsSwiper(window.innerWidth <= 768);
+        setIsSwiper(window.innerWidth <= 768 && data.length !== 0);
     };
 
-    useEffect(() => {
-        getData('/json/team.json', setData);
-
+    useEffect(() => {       
         window.addEventListener("resize", resizeHandler);
 
         return () => window.removeEventListener("resize", resizeHandler);
+    }, [data]);
+
+    useEffect(() => {
+        getData('/json/team.json', setData).then((dataObject) => setIsSwiper(dataObject.length !== 0));
     }, []);
 
     return (
