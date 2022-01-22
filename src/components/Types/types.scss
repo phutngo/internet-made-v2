@@ -85,19 +85,19 @@
     margin: 0 -5px;
     position: relative;
 
-    &:not(.min):after{
-        content: "";
-        display: block;
-        width: 90%;
-        height: 90%;
-        border: 14.1476px solid #47C3E7;
-        filter: blur(69.4521px);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-    }
+    // &:not(.min):after{
+    //     content: "";
+    //     display: block;
+    //     width: 90%;
+    //     height: 90%;
+    //     border: 14.1476px solid #47C3E7;
+    //     filter: blur(69.4521px);
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     z-index: 2;
+    // }
 
     &.min{
         width: 256px;

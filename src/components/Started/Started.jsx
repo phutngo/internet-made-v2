@@ -2,7 +2,7 @@ import React from 'react';
 import "./started.scss";
 
 // Images
-import personaje from '@root/assets/images/started-personaje.png'
+import personaje from '@root/assets/images/hero/personaje-04.png'
 
 export default function(){
     return (

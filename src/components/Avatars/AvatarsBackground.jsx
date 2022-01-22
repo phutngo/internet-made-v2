@@ -96,14 +96,14 @@ export default function(){
                                 </div>
                                 <div className="avatarsback__item">
                                     <picture>
-                                        <source srcSet={card3Webp} type="image/webp" />
-                                        <img src={card3} alt="card" className="avatarsback__card-img"/>
+                                        <source srcSet={card4Webp} type="image/webp" />
+                                        <img src={card4} alt="card" className="avatarsback__card-img"/>
                                     </picture>
                                 </div>
                                 <div className="avatarsback__item">
                                     <picture>
-                                        <source srcSet={card4Webp} type="image/webp" />
-                                        <img src={card4} alt="card" className="avatarsback__card-img"/>
+                                        <source srcSet={card3Webp} type="image/webp" />
+                                        <img src={card3} alt="card" className="avatarsback__card-img"/>
                                     </picture>
                                 </div>
                                 <div className="avatarsback__item">

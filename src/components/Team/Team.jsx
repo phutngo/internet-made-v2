@@ -20,7 +20,8 @@ export default function(){
         setIsSwiper(window.innerWidth <= 768 && data.length !== 0);
     };
 
-    useEffect(() => {       
+    useEffect(() => {      
+        resizeHandler(); 
         window.addEventListener("resize", resizeHandler);
 
         return () => window.removeEventListener("resize", resizeHandler);
