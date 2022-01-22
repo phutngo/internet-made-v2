@@ -14,6 +14,8 @@ import personaje03 from '@root/assets/images/hero/personaje-03.png';
 import personaje03Webp from '@root/assets/images/hero/personaje-03.webp';
 import personaje04 from '@root/assets/images/hero/personaje-04.png';
 import personaje04Webp from '@root/assets/images/hero/personaje-04.webp';
+import personaje05 from '@root/assets/images/hero/personaje-05.png';
+import personaje05Webp from '@root/assets/images/hero/personaje-05.webp';
 import background from '@root/assets/images/hero/background.png';
 import backgroundWebp from '@root/assets/images/hero/background.webp';
 import backgroundMobile from '@root/assets/images/hero/background@mobile.png';
@@ -30,6 +32,8 @@ import item03 from '@root/assets/images/hero/item-03.png';
 import item03Webp from '@root/assets/images/hero/item-03.webp';
 import item04 from '@root/assets/images/hero/item-04.png';
 import item04Webp from '@root/assets/images/hero/item-04.webp';
+import item05 from '@root/assets/images/hero/item-05.png';
+import item05Webp from '@root/assets/images/hero/item-05.webp';
 import internetMade from '@root/assets/images/hero/internet-made.png';
 import MintButton from '../MintButton/MintButton';
 
@@ -89,6 +93,10 @@ export default function(){
                 <picture>          
                     <source srcSet={personaje04Webp} type="image/webp" />          
                     <img src={personaje04} alt="bg-personaje" className={setClassActive(3, backgroundIndex)} />
+                </picture>
+                <picture>          
+                    <source srcSet={personaje05Webp} type="image/webp" />          
+                    <img src={personaje05} alt="bg-personaje" className={setClassActive(4, backgroundIndex)} />
                 </picture>
             </div>
             <div className="hero__container">
@@ -161,6 +169,14 @@ export default function(){
                                     <picture>
                                         <source srcSet={item04Webp} type="image/webp" />                                        
                                         <img src={item04} alt="item" />
+                                    </picture>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="hero__slider-item" data-swiper-parallax-scale="1" data-swiper-parallax-opacity="0.5">
+                                    <picture>
+                                        <source srcSet={item05Webp} type="image/webp" />                                        
+                                        <img src={item05} alt="item" />
                                     </picture>
                                 </div>
                             </SwiperSlide>
