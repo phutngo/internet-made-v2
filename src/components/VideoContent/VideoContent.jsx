@@ -8,18 +8,18 @@ import videoPreviewWebp from '@root/assets/images/video-preview.webp';
 import Loader from '../Loader/Loader';
 
 export default function(){
+    const [ref, setRef] = useState(null);
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
-        const video = document.createElement("video");
-        video.src = room;
+        if(ref === null){return;}
 
-        video.onloadeddata = setLoaded.bind(null, true);
-    }, []);
+        ref.onloadeddata = () => setLoaded(true);
+    }, [ref]);
 
     return (
         <section className="videocontent">
-            {loaded === false && (
+            {/* {loaded === false && (
                 <div className="videocontent__preview-image">
                     <picture>
                         <source srcSet={videoPreviewWebp} type="image/webp" />
@@ -27,8 +27,8 @@ export default function(){
                     </picture>
                     <Loader className="videocontent__loader" />
                 </div>
-            )}
-            {loaded && <video src={room} autoPlay loop muted playsInline></video>}
+            )} */}
+            <video src={room} ref={setRef} autoPlay loop muted playsInline></video>
         </section>
     );
 }

@@ -26,7 +26,7 @@ export default function(){
             <Avatars />
             <Presentation />
             <Release />
-            <Banner />
+            {/* <Banner /> */}
             <Roadmap />
             <Types />
             <Faq />
