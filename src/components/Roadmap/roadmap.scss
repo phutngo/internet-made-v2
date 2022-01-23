@@ -4,13 +4,14 @@
     background: #fff;
 }
 .roadmap__container{
-    padding: 101px 25px 0;
+    padding: 101px 25px 183px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     @media (max-width: 768px){
         padding-top: 55px;
+        padding-bottom: 103px;
     }
 
     @media (max-width: 394px){
