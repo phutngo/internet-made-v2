@@ -12,14 +12,23 @@ export default function(){
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
-        if(ref === null){return;}
+        if(ref === null) { return; }
 
-        ref.onloadeddata = () => setLoaded(true);
+        ref.play();
     }, [ref]);
+
+    useEffect(() => {
+        const video = document.createElement("video");
+        video.addEventListener("canplaythrough", () => {
+            setLoaded(true);
+        });
+        video.src = room;
+        video.load();
+    }, [])
 
     return (
         <section className="videocontent">
-            {/* {loaded === false && (
+            {loaded === false && (
                 <div className="videocontent__preview-image">
                     <picture>
                         <source srcSet={videoPreviewWebp} type="image/webp" />
@@ -27,8 +36,8 @@ export default function(){
                     </picture>
                     <Loader className="videocontent__loader" />
                 </div>
-            )} */}
-            <video src={room} ref={setRef} autoPlay loop muted playsInline></video>
+            )}
+            {loaded && <video src={room} ref={setRef} autoPlay loop muted playsInline></video>}
         </section>
     );
 }

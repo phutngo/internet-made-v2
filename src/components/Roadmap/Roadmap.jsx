@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {getData} from '@root/javascript/utils';
 import "./roadmap.scss"
-import { useEffect } from 'react';
 import RoadmapItem from './RoadmapItem';
+
+// Images
+import int from '@root/assets/images/int.gif';
 
 export default function(){
     const [data, setData] = useState([]);
@@ -17,6 +19,9 @@ export default function(){
                     {data.map(item => (
                         <RoadmapItem {...item} key={item.phase} />
                     ))}
+                </div>
+                <div className="roadmap__gif">
+                    <span data-lazy-bg={int}></span>
                 </div>
             </div>
         </section>
