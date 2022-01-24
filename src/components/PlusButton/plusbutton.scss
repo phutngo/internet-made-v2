@@ -1,13 +1,5 @@
 @import "@root/scss/mixins.scss";
 
-body.mac-os .plusbutton span{
-    margin-top: 2px;
-    
-    @media (max-width: 454px){
-        margin-top: 3px;
-    }
-}
-
 .plusbutton{
     background: #FFFFFF;
     display: flex;

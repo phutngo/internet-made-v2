@@ -10,6 +10,7 @@ export default function({ step, smooth, picture, min_value, max_value, state }){
     const [thumbRef, setThumbRef]       = useState(null);
     const [active, setActive]           = useState(false);
     const [coords, setCoords]           = useState({});
+    const [resize, setResize]           = useState(window.innerWidth);
 
     const onMouseDown = (event) => {
         setActive(true);
@@ -44,10 +45,11 @@ export default function({ step, smooth, picture, min_value, max_value, state }){
     }
 
     const onMouseMove = (event) => {
+        console.log(active)
         if(active === false || sliderRef === null || thumbRef === null){ return; };
 
         const coords        = getCoords();
-        const currentX      = event.clientX - coords.sliderCoords.left;
+        const currentX      = (event.clientX || event.changedTouches[0].clientX) - coords.sliderCoords.left;
         const left          = Math.max(coords.MIN_X, Math.min(coords.MAX_X, currentX - coords.thumbCenter));
 
         const positionLeft  = smooth === true 
@@ -65,23 +67,42 @@ export default function({ step, smooth, picture, min_value, max_value, state }){
         setValue(Number(value));
     };
 
+    const resizeHandler = () => {
+        setResize(window.innerWidth);
+    };
+
     useEffect(() => {
         if(active === true || sliderRef === null || thumbRef === null){ return; };
 
         const coords    = getCoords();
-        console.log(coords)
         const left      = ((value - 1) / step) * coords.stepWidth + "px";
 
         setCoords({ left });
-    }, [state]);
+    }, [state, resize]);
 
     useEffect(() => {
-        document.addEventListener("mousemove", onMouseMove);
-        document.addEventListener("mouseup", onMouseUp);
+        const supportTouchScreen = !!('ontouchstart' in window);
+
+        if(supportTouchScreen){
+            document.addEventListener("touchmove", onMouseMove);
+            document.addEventListener("touchend", onMouseUp);
+        } else {            
+            document.addEventListener("mousemove", onMouseMove);
+            document.addEventListener("mouseup", onMouseUp);
+        }
+
+        window.addEventListener("resize", resizeHandler);
 
         return () => {
-            document.removeEventListener("mousemove", onMouseMove);
-            document.removeEventListener("mouseup", onMouseUp);
+            if(supportTouchScreen){
+                document.removeEventListener("touchmove", onMouseMove);
+                document.removeEventListener("touchend", onMouseUp);
+            } else {
+                document.removeEventListener("mousemove", onMouseMove);
+                document.removeEventListener("mouseup", onMouseUp);
+            }
+
+            window.removeEventListener("resize", resizeHandler);
         };
     });
 
@@ -92,7 +113,9 @@ export default function({ step, smooth, picture, min_value, max_value, state }){
                 className="range__avatar"
                 ref={setThumbRef} 
                 onMouseDown={onMouseDown}
+                onTouchStart={onMouseDown}
                 onMouseUp={onMouseUp}
+                onTouchEnd={onMouseUp}
                 style={coords}
             >
                 <img src={picture} alt="avatar" />

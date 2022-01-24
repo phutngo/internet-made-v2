@@ -7,6 +7,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 768px){
+        padding-top: 54px;
+        padding-bottom: 101px;
+    }
 }
 .mintcontent__interned-made{
     max-width: 536px;
@@ -15,6 +20,10 @@
     background: #FFA133;
     padding: 14px 0;
     transform: rotate(-4.04deg);
+
+    @media (max-width: 465px){
+        padding: 5px 0;
+    }
 }
 .mintcontent__runline-item{
     padding: 0 15px;
@@ -41,5 +50,19 @@
         text-transform: uppercase;
 
         color: #000000;
+    }
+
+    @media (max-width: 465px){
+        padding: 0 10px;
+        img{
+            max-width: 113px;
+        }
+        h2{
+            font-size: 20.76px;
+        }
+        p{
+            font-size: 9px;
+            max-width: 171px;
+        }
     }
 }

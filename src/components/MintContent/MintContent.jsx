@@ -10,7 +10,7 @@ import MintWallet from '../MintWallet/MintWallet';
 
 export default function(){
     const settings = {
-        speed: 150,
+        speed: window.innerWidth > 768 ? 150 : 70,
         gradient: false,
     };
 
