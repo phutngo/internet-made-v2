@@ -6,8 +6,11 @@ import "./mintworkspace.scss";
 // Images
 import workspaceBackground from '@root/assets/images/mint/workspace-background.png';
 import classNames from 'classnames';
+import Range from '../Range/Range';
 
 export default function(){
+    const [parentRef, setParentRef] = useState(null);
+    const [ref, setRef] = useState(null);
     const [value, setValue] = useState(1);
     const [config, setConfig] = useState({
         MIN_VALUE: 1,
@@ -17,12 +20,17 @@ export default function(){
     });
 
     const addClickHandler = () => {
-        setValue(Math.min(config.MAX_VALUE, value + 1));
+        console.log(value)
+        setValue(Math.min(config.MAX_VALUE, value + config.STEP));
     };
 
     const minusClickHandler = () => {
-        setValue(Math.max(config.MIN_VALUE, value - 1));
+        setValue(Math.max(config.MIN_VALUE, value - config.STEP));
     };
+
+    useEffect(() => {
+        setValue(config.MIN_VALUE);
+    }, [config]);
 
     useEffect(getData.bind(null, "/json/mint-config.json", setConfig), []);
 
@@ -45,12 +53,7 @@ export default function(){
                         ></button>
                     </div>
                 </div>
-                <div className="mintworkspace__range">
-                    <div className="mintworkspace__range-line"></div>
-                    <button className="mintworkspace__range-avatar">
-                        <img src={config.PICTURE} alt="avatar" />
-                    </button>
-                </div>
+                <Range {...config} state={[value, setValue]} />
                 <PlusButton className="mintworkspace__btn">
                     <span>Mint <strong>{value}</strong> intenet made nft!</span>
                 </PlusButton>

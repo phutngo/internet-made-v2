@@ -2,5 +2,6 @@
     "MIN_VALUE": 1,
     "MAX_VALUE": 9,
     "STEP": 1,
-    "PICTURE": "/assets/images/mint/avatar.png"
+    "PICTURE": "/assets/images/mint/avatar.png",
+    "SMOOTH": true
 }
