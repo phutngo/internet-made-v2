@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import "./range.scss"
 
-export default function(props){
-    const [value, setValue]             = props.state;
+export default function({ step, smooth, picture, min_value, max_value, state }){
+    const [value, setValue]             = state;
     const [settings, setSettings]       = useState({ inited: false });
     const [sliderRef, setSliderRef]     = useState(null);
     const [thumbRef, setThumbRef]       = useState(null);
@@ -19,29 +19,46 @@ export default function(props){
         setActive(false);
     };
 
-    const onMouseMove = (event) => {
-        if(active === false || sliderRef === null || thumbRef === null){ return; };
+    console.log(value)
 
+    const getCoords = () => {
         const sliderCoords  = sliderRef.getBoundingClientRect();
-        const thumbCoords   = thumbRef.getBoundingClientRect();
+        const thumbCoords   = thumbRef.getBoundingClientRect(); 
         const thumbCenter   = thumbCoords.width / 2;
         const MIN_X         = 0;
         const MAX_X         = sliderCoords.width - thumbCoords.width;
-        const currentX      = event.clientX - sliderCoords.left;
-        const left          = Math.max(MIN_X, Math.min(MAX_X, currentX - thumbCenter));
-        const step          = (settings.max - settings.min) / settings.step;
-        const stepWidth     = MAX_X / step;
-        const divider       = stepWidth / settings.step;
+        const stepDivider   = (max_value - min_value) / step;
+        const stepWidth     = MAX_X / stepDivider;
+        const divider       = stepWidth / step;
+        const strFixed      = String(step).split(".")[1]?.length || 0;
 
-        const positionLeft  = settings.smooth === true 
+        return {
+            sliderCoords,
+            thumbCoords,
+            thumbCenter,
+            MIN_X,
+            MAX_X,
+            stepDivider,
+            stepWidth,
+            divider,
+            strFixed
+        };
+    }
+
+    const onMouseMove = (event) => {
+        if(active === false || sliderRef === null || thumbRef === null){ return; };
+
+        const coords        = getCoords();
+        const currentX      = event.clientX - coords.sliderCoords.left;
+        const left          = Math.max(coords.MIN_X, Math.min(coords.MAX_X, currentX - coords.thumbCenter));
+
+        const positionLeft  = smooth === true 
             ? left
-            : Math.round(left / stepWidth) * stepWidth;
-
-        const strFixed      = String(settings.step).split(".")[1]?.length || 0;
+            : Math.round(left / coords.stepWidth) * coords.stepWidth;
 
         const value         = Math
-            .min(settings.max, settings.min + Math.round(positionLeft / divider / settings.step) * settings.step )
-            .toFixed(strFixed);
+            .min(max_value, min_value + Math.round(positionLeft / coords.divider / step) * step )
+            .toFixed(coords.strFixed);
 
         setCoords({
             left: positionLeft + "px"
@@ -51,15 +68,15 @@ export default function(props){
     };
 
     useEffect(() => {
-        setSettings({
-            inited: true,
-            picture: props.PICTURE,
-            min: props.MIN_VALUE,
-            max: props.MAX_VALUE,
-            step: props.STEP,
-            smooth: props.SMOOTH
+        if(active === true || sliderRef === null || thumbRef === null){ return; };
+
+        const coords    = getCoords();
+        const left      = (value - 1) * coords.stepWidth + "px";
+        
+        setCoords({
+            left
         });
-    }, [props]);
+    }, [state]);
 
     useEffect(() => {
         document.addEventListener("mousemove", onMouseMove);
@@ -81,7 +98,7 @@ export default function(props){
                 onMouseUp={onMouseUp}
                 style={coords}
             >
-                <img src={settings.picture} alt="avatar" />
+                <img src={picture} alt="avatar" />
             </button>
         </div>
     );

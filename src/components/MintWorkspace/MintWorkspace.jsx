@@ -13,23 +13,24 @@ export default function(){
     const [ref, setRef] = useState(null);
     const [value, setValue] = useState(1);
     const [config, setConfig] = useState({
-        MIN_VALUE: 1,
-        MAX_VALUE: 9999,
-        STEP: 1,
-        PICTURE: null
+        min_value: 1,
+        max_value: 9999,
+        init_value: 1,
+        step: 1,
+        picture: null,
+        smooth: false
     });
 
     const addClickHandler = () => {
-        console.log(value)
-        setValue(Math.min(config.MAX_VALUE, value + config.STEP));
+        setValue(Math.min(config.max_value, value + config.step));
     };
 
     const minusClickHandler = () => {
-        setValue(Math.max(config.MIN_VALUE, value - config.STEP));
+        setValue(Math.max(config.min_value, value - config.step));
     };
 
     useEffect(() => {
-        setValue(config.MIN_VALUE);
+        setValue(config.init_value || config.min_value);
     }, [config]);
 
     useEffect(getData.bind(null, "/json/mint-config.json", setConfig), []);
@@ -44,11 +45,11 @@ export default function(){
                     </div>
                     <div className="mintworkspace__controls">
                         <button 
-                            className={classNames("mintworkspace__controls-btn plus", { disabled: config.MAX_VALUE === value})} 
+                            className={classNames("mintworkspace__controls-btn plus", { disabled: config.max_value === value})} 
                             onClick={addClickHandler}
                         ></button>
                         <button 
-                            className={classNames("mintworkspace__controls-btn minus", { disabled: config.MIN_VALUE === value})} 
+                            className={classNames("mintworkspace__controls-btn minus", { disabled: config.min_value === value})} 
                             onClick={minusClickHandler}
                         ></button>
                     </div>
