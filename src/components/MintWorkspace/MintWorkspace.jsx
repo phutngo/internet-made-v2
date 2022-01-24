@@ -21,12 +21,14 @@ export default function(){
         smooth: false
     });
 
+    const strFixed = String(config.step).split(".")[1]?.length || 0;
+
     const addClickHandler = () => {
-        setValue(Math.min(config.max_value, value + config.step));
+        setValue(Number(Math.min(config.max_value, value + config.step).toFixed(strFixed)));
     };
 
     const minusClickHandler = () => {
-        setValue(Math.max(config.min_value, value - config.step));
+        setValue(Number(Math.max(config.min_value, value - config.step).toFixed(strFixed)));
     };
 
     useEffect(() => {

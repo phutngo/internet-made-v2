@@ -19,8 +19,6 @@ export default function({ step, smooth, picture, min_value, max_value, state }){
         setActive(false);
     };
 
-    console.log(value)
-
     const getCoords = () => {
         const sliderCoords  = sliderRef.getBoundingClientRect();
         const thumbCoords   = thumbRef.getBoundingClientRect(); 
@@ -54,7 +52,7 @@ export default function({ step, smooth, picture, min_value, max_value, state }){
 
         const positionLeft  = smooth === true 
             ? left
-            : Math.round(left / coords.stepWidth) * coords.stepWidth;
+            : Math.min(coords.MAX_X, Math.round(left / coords.stepWidth) * coords.stepWidth);
 
         const value         = Math
             .min(max_value, min_value + Math.round(positionLeft / coords.divider / step) * step )
@@ -71,11 +69,10 @@ export default function({ step, smooth, picture, min_value, max_value, state }){
         if(active === true || sliderRef === null || thumbRef === null){ return; };
 
         const coords    = getCoords();
-        const left      = (value - 1) * coords.stepWidth + "px";
-        
-        setCoords({
-            left
-        });
+        console.log(coords)
+        const left      = ((value - 1) / step) * coords.stepWidth + "px";
+
+        setCoords({ left });
     }, [state]);
 
     useEffect(() => {
