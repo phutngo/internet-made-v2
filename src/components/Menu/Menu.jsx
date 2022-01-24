@@ -22,13 +22,13 @@ export default function(){
                 <div className="menu__body">
                     <span className="menu-title">Menu</span>
                     <nav className="menu__nav">
-                        <a onClick={closeMenu} href="#xoxo">Vision</a>
-                        <a onClick={closeMenu} href="#collection">Initial Collection</a>
-                        <a onClick={closeMenu} href="#lookbook">Lookbook</a>
-                        <a onClick={closeMenu} href="#team">Team</a>
-                        <a onClick={closeMenu} href="#roadmap">Roadmap</a>
-                        <a onClick={closeMenu} href="#faq">F.A.Q.</a>
-                        <a onClick={closeMenu} href="#howitstarted">How it started</a>
+                        <a onClick={closeMenu} href="/#xoxo">Vision</a>
+                        <a onClick={closeMenu} href="/#collection">Initial Collection</a>
+                        <a onClick={closeMenu} href="/#lookbook">Lookbook</a>
+                        <a onClick={closeMenu} href="/#team">Team</a>
+                        <a onClick={closeMenu} href="/#roadmap">Roadmap</a>
+                        <a onClick={closeMenu} href="/#faq">F.A.Q.</a>
+                        <a onClick={closeMenu} href="/#howitstarted">How it started</a>
                     </nav>
                 </div>
                 <footer className="menu__footer">

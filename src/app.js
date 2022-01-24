@@ -3,7 +3,7 @@ import { hot } from 'react-hot-loader/root';
 import { Switch, Route, Redirect } from 'react-router';
 import Main from '@root/pages/Main';
 import Menu from '@root/components/Menu/Menu';
-import Mint from '@root/pages/Mint';
+import Mint from '@root/pages/Mint/Mint';
 import { Context, value } from './Context';
 
 const App = () => {

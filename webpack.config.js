@@ -33,6 +33,10 @@ module.exports = {
             '@root': path.resolve(__dirname, src)
         }
     },
+    devServer: {
+        port: 8000,        
+        historyApiFallback: true
+    },
     performance: {
         hints: false,
         maxEntrypointSize: 512000,

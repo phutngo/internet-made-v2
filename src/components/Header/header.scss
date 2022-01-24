@@ -9,7 +9,8 @@
     padding: 13px 20px 13px 38px;     
     background: rgba(41, 44, 52, 0.3);
     backdrop-filter: blur(44px);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
 
     @media (max-width: 404px){
         padding-left: 25px;

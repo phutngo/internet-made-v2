@@ -20,7 +20,6 @@ import background from '@root/assets/images/hero/background.png';
 import backgroundWebp from '@root/assets/images/hero/background.webp';
 import backgroundMobile from '@root/assets/images/hero/background@mobile.png';
 import backgroundMobileWebp from '@root/assets/images/hero/background@mobile.webp';
-import logo from '@root/assets/images/hero/logo.png';
 import nftLabel from '@root/assets/images/hero/nft-label.png';
 import verticalLine from '@root/assets/images/hero/vertical-line.png';
 import horizontalLine from '@root/assets/images/hero/horizontal-line.png';
@@ -36,6 +35,7 @@ import item05 from '@root/assets/images/hero/item-05.png';
 import item05Webp from '@root/assets/images/hero/item-05.webp';
 import internetMade from '@root/assets/images/hero/internet-made.png';
 import MintButton from '../MintButton/MintButton';
+import Sidebar from '../Sidebar/Sidebar';
 
 function setClassActive(index, current){
     return index === current 
@@ -101,28 +101,10 @@ export default function(){
             </div>
             <div className="hero__container">
                 <Header />
-                <div className="hero__side">
-                    <img src={logo} alt="logo" className="hero__logo" />
-                    <nav className="hero__nav start">
-                        <a href="#faq">Faq</a>
-                        <a href="#team">Team</a>
-                        <a href="#lookbook">Lookbook</a>
-                        <a href="#roadmap">Roadmap</a>
-                        <a href="#collection">Initial Collection</a>
-                        <a href="#vision">Vision</a>
-                    </nav>
-                </div>
-                <div className="hero__other-nav">
-                    <a href="#howitstarted">How It Started</a>
-                </div>
+                <Sidebar className="hero__side" />
                 <div className="hero__info">
                     <img src={nftLabel} alt="nftLabel" className="hero__nft-label" />
                     <div className="hero__info-wrapper">
-                        {/* <h2>
-                            <span className="row-1">Inte</span>
-                            <span className="row-2">rnet</span>
-                            <span className="row-3">Made</span>
-                        </h2> */}
                         <div className="image">
                             <img src={internetMade} alt="im" />
                         </div>
