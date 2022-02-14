@@ -45,3 +45,6 @@ body::-webkit-scrollbar-thumb:hover{
         padding: 0 22px;
     }
 }
+.marquee__root.marquee-container{
+    overflow-x: visible!important;
+}

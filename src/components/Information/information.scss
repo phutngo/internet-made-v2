@@ -1,0 +1,137 @@
+@import "../../scss/mixins.scss";
+
+.information{
+    position: relative;
+}
+.information__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1362px;
+    height: auto;
+    position: relative;
+}
+.information__title{
+    @include monument(800);
+    font-size: 60px;
+    line-height: 1;
+    color: #000;
+    text-transform: uppercase;
+}
+.information__text{
+    @include monument(400);
+    font-size: 14px;
+    line-height: 1.5;    
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: #000000;
+    
+}
+
+// Roots
+.information-roots{
+    background: linear-gradient(180deg, #CE7A10 0%, #CE6500 100%);
+}
+.information-roots__content{
+    max-width: 472px;
+    position: relative;
+    z-index: 2;
+    padding: 146px 0;
+}
+.information-roots__ns{
+    margin-top: 47px;
+}
+.information-roots__text{
+    margin-top: 66px;
+}
+.information-roots__image{
+    flex-shrink: 0;
+    position: absolute;
+    left: 45%;
+    bottom: 0;
+    z-index: 1;
+    width: 736px;
+}
+
+// Frost
+.information-frost{
+    background: #000;
+    display: flex;
+    min-height: 784px;
+}
+.information-frost__content,
+.information-frost__text{
+    position: relative;
+    z-index: 3;
+}
+.information-frost__content{
+    max-width: 357px;
+}
+.information-frost__title{
+    color: #fff;
+    font-size: 76px;
+}
+.information-frost__ns{
+    margin-top: 21px;
+
+    .numberscreen__number{
+        font-size: 90px;
+    }
+    .numberscreen__title{
+        font-size: 12.5px;
+    }
+    .numberscreen__plus{
+        width: 15.05px;
+        height: 15.05px;
+
+        &::after{
+            width: 2px;
+        }
+        &::before{
+            height: 2px;
+        }
+    }
+}
+.information-frost__text{
+    max-width: 317px;
+
+    color: #fff;
+}
+.information-frost__image{
+    width: 700px;
+    position: absolute;
+    left: 53%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    .informationimage__box{
+        left: 46%;
+    }
+}
+
+// Statement
+.information-statement{
+    min-height: 770px;
+    display: flex;
+    background: linear-gradient(180deg, #A4A5A4 0%, #979797 100%);
+}
+.information-statement__image{
+    position: absolute;
+    right: 46%;
+    bottom: 0;
+    width: 678px;
+}
+.information-statement__content{
+    margin-left: auto;
+    flex: 0 0 507px;
+}
+.information-statement__ns{
+    margin-top: 25px;
+}
+.information-statement__title{}
+.information-statement__text{
+    margin-top: 36px;
+    max-width: 472px;
+}

@@ -9,19 +9,18 @@ export default function(){
             <div className="avatars__content">
                 <div className="avatars__title">
                     <i></i><i></i><i></i><i></i>
-                    <h3>Avatars</h3>
+                    <h3>GENESIS COLLECTION</h3>
                     <h2>9999</h2>
                 </div>
                 <p className="avatars__text">
-                    To start off the Internet Made (IM) movement, we will be releasing our initial 
-                    collection of 9,999 IM ‘‘avatars’’ with 150+ traits. Each one will be a unique 
-                    NFT made out of unique traits and colorways so that every NFT is a singular 1/1 
-                    combination.
+                    TO START OFF THE INTERNET MADE MOVEMENT, WE WILL BE 
+                    RELEASING OUR GENESIS COLLECTION OF 9999 IM ‘‘AVATARS’’ 
+                    IN 3 DROPS. 
                     <br />
                     <br />
-                    This will grant you access to our ecosystem, which will be as unique as your avatar. 
-                    Our goal is to welcome everyone – from our holders, artists, and founders – into the 
-                    future of fashion.
+                    THIS WILL GRANT YOU ACCESS TO OUR ECOSYSTEM, WHICH WILL BE AS UNIQUE AS YOUR AVATAR. 
+                    OUR GOAL IS TO WELCOME EVERYONE – FROM OUR HOLDERS, ARTISTS, AND FOUNDERS – INTO 
+                    THE FUTURE OF FASHION.
                 </p>
             </div>
         </section>

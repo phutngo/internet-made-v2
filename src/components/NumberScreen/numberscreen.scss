@@ -1,0 +1,74 @@
+@import "../../scss/mixins.scss";
+
+.numberscreen{
+    display: flex;
+}
+.numberscreen__wrapper{
+    position: relative;
+    padding: 12px 16px 5px 27px;
+    user-select: none;
+}
+.numberscreen__title{
+    margin-left: 12px;
+    @include monument(800);
+    font-size: 15.745px;
+    line-height: 1.2;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.numberscreen__number{
+    @include monument(800);
+
+    font-size: 113.214px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.numberscreen__plus{
+    width: 18.85px;
+    height: 18.85px;
+    position: absolute;
+    --color: #000;
+
+    &::before,
+    &::after{
+        content: "";
+        display: block;
+        background: var(--color);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &::before{
+        width: 100%;
+        height: 2.56px;
+    }
+    &::after{
+        width: 2.56px;
+        height: 100%;
+    }
+
+    &_01{
+        left: 0;
+        top: 0;
+        transform: translate(-50%, -50%);
+    }
+    &_02{
+        right: 0;
+        top: 0;
+        transform: translate(50%, -50%);
+    }
+    &_03{
+        left: 0;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+    }
+    &_04{
+        right: 0;
+        bottom: 0;
+        transform: translate(50%, 50%);
+    }
+}
