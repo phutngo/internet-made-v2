@@ -55,7 +55,7 @@
 
     .background-personaje{
         position: absolute;
-        max-height: 640px;
+        max-height: 770px;
         width: auto;
         z-index: 3;
         bottom: 0;
@@ -69,7 +69,10 @@
         }
 
         @media (max-width: 768px){
-            max-height: 500px;    
+            max-height: 620px;    
+        }
+        @media (max-width: 359px){
+            max-height: 550px;
         }
     }
 }

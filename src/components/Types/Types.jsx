@@ -3,27 +3,16 @@ import "./types.scss";
 
 // Images
 
-import type01 from '@root/assets/images/types/item-01.png'; 
-import type02 from '@root/assets/images/types/item-02.png'; 
-import type03 from '@root/assets/images/types/item-03.png'; 
-import type04 from '@root/assets/images/types/item-04.png'; 
-import type05 from '@root/assets/images/types/item-05.png'; 
-import type01Webp from '@root/assets/images/types/item-01.webp'; 
-import type02Webp from '@root/assets/images/types/item-02.webp'; 
-import type03Webp from '@root/assets/images/types/item-03.webp'; 
-import type04Webp from '@root/assets/images/types/item-04.webp'; 
-import type05Webp from '@root/assets/images/types/item-05.webp'; 
-
-// import type01 from '@root/assets/images/types/type-01.png'; 
-// import type02 from '@root/assets/images/types/type-02.png'; 
-// import type03 from '@root/assets/images/types/type-03.png'; 
-// import type04 from '@root/assets/images/types/type-04.png'; 
-// import type05 from '@root/assets/images/types/type-05.png'; 
-// import type06 from '@root/assets/images/types/type-06.png'; 
-// import type07 from '@root/assets/images/types/type-07.png'; 
-// import type08 from '@root/assets/images/types/type-08.png'; 
-// import type09 from '@root/assets/images/types/type-09.png'; 
-// import type10 from '@root/assets/images/types/type-10.png'; 
+import type01 from '@root/assets/images/types/type-01.png'; 
+import type02 from '@root/assets/images/types/type-02.png'; 
+import type03 from '@root/assets/images/types/type-03.png'; 
+import type04 from '@root/assets/images/types/type-04.png'; 
+import type05 from '@root/assets/images/types/type-05.png'; 
+import type06 from '@root/assets/images/types/type-06.png'; 
+import type07 from '@root/assets/images/types/type-07.png'; 
+import type08 from '@root/assets/images/types/type-08.png'; 
+import type09 from '@root/assets/images/types/type-09.png'; 
+import type10 from '@root/assets/images/types/type-10.png'; 
 // import type11 from '@root/assets/images/types/type-11.png'; 
 // import type12 from '@root/assets/images/types/type-12.png'; 
 // import type13 from '@root/assets/images/types/type-13.png'; 
@@ -34,16 +23,16 @@ import type05Webp from '@root/assets/images/types/item-05.webp';
 // import type18 from '@root/assets/images/types/type-18.png'; 
 // import type19 from '@root/assets/images/types/type-19.png'; 
 // import type20 from '@root/assets/images/types/type-20.png'; 
-// import type01Webp from '@root/assets/images/types/type-01.webp'; 
-// import type02Webp from '@root/assets/images/types/type-02.webp'; 
-// import type03Webp from '@root/assets/images/types/type-03.webp'; 
-// import type04Webp from '@root/assets/images/types/type-04.webp'; 
-// import type05Webp from '@root/assets/images/types/type-05.webp'; 
-// import type06Webp from '@root/assets/images/types/type-06.webp'; 
-// import type07Webp from '@root/assets/images/types/type-07.webp'; 
-// import type08Webp from '@root/assets/images/types/type-08.webp'; 
-// import type09Webp from '@root/assets/images/types/type-09.webp'; 
-// import type10Webp from '@root/assets/images/types/type-10.webp'; 
+import type01Webp from '@root/assets/images/types/type-01.webp'; 
+import type02Webp from '@root/assets/images/types/type-02.webp'; 
+import type03Webp from '@root/assets/images/types/type-03.webp'; 
+import type04Webp from '@root/assets/images/types/type-04.webp'; 
+import type05Webp from '@root/assets/images/types/type-05.webp'; 
+import type06Webp from '@root/assets/images/types/type-06.webp'; 
+import type07Webp from '@root/assets/images/types/type-07.webp'; 
+import type08Webp from '@root/assets/images/types/type-08.webp'; 
+import type09Webp from '@root/assets/images/types/type-09.webp'; 
+import type10Webp from '@root/assets/images/types/type-10.webp'; 
 // import type11Webp from '@root/assets/images/types/type-11.webp'; 
 // import type12Webp from '@root/assets/images/types/type-12.webp'; 
 // import type13Webp from '@root/assets/images/types/type-13.webp'; 
@@ -154,32 +143,32 @@ export default function(){
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type01Webp} type="image/webp" />
-                            <img src={type01} alt="type-img" />
+                            <source srcSet={type06Webp} type="image/webp" />
+                            <img src={type06} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type02Webp} type="image/webp" />
-                            <img src={type02} alt="type-img" />
+                            <source srcSet={type07Webp} type="image/webp" />
+                            <img src={type07} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type03Webp} type="image/webp" />
-                            <img src={type03} alt="type-img" />
+                            <source srcSet={type08Webp} type="image/webp" />
+                            <img src={type08} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type04Webp} type="image/webp" />
-                            <img src={type04} alt="type-img" />
+                            <source srcSet={type09Webp} type="image/webp" />
+                            <img src={type09} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item min">
                         <picture>
-                            <source srcSet={type05Webp} type="image/webp" />
-                            <img src={type05} alt="type-img" />
+                            <source srcSet={type10Webp} type="image/webp" />
+                            <img src={type10} alt="type-img" />
                         </picture>
                     </div>
                 </div>
@@ -216,32 +205,32 @@ export default function(){
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type01Webp} type="image/webp" />
-                            <img src={type01} alt="type-img" />
+                            <source srcSet={type06Webp} type="image/webp" />
+                            <img src={type06} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type02Webp} type="image/webp" />
-                            <img src={type02} alt="type-img" />
+                            <source srcSet={type07Webp} type="image/webp" />
+                            <img src={type07} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type03Webp} type="image/webp" />
-                            <img src={type03} alt="type-img" />
+                            <source srcSet={type08Webp} type="image/webp" />
+                            <img src={type08} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type04Webp} type="image/webp" />
-                            <img src={type04} alt="type-img" />
+                            <source srcSet={type09Webp} type="image/webp" />
+                            <img src={type09} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item min">
                         <picture>
-                            <source srcSet={type05Webp} type="image/webp" />
-                            <img src={type05} alt="type-img" />
+                            <source srcSet={type10Webp} type="image/webp" />
+                            <img src={type10} alt="type-img" />
                         </picture>
                     </div>
                 </div>

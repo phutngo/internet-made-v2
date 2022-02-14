@@ -13,6 +13,7 @@ import VideoContent from '@root/components/VideoContent/VideoContent';
 import Started from '@root/components/Started/Started';
 import Roadmap from '@root/components/Roadmap/Roadmap';
 import Information from '../components/Information/Information';
+import Release from '../components/Release/Release';
 
 export default function(){
     return (
@@ -22,6 +23,7 @@ export default function(){
             <VideoContent />
             <Xoxo />
             <Avatars />
+            <Release />
             <Information />
             <Roadmap />
             <Types />

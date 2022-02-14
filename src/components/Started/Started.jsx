@@ -38,7 +38,7 @@ export default function(){
                             fashion designers: Lara Ponebsek, Hugo Suklje, and Lara Pikovnik.
                         </p>
                         <p>
-                            Together, we are Internet Made.
+                            Fast forward to four months later: we were ready to begin.
                         </p>
                     </div>
                 </div>

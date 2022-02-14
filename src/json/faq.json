@@ -1,8 +1,8 @@
 [
     {
         "id": 0,
-        "question": "How to mint our NFT?",
-        "answer": "You will be able to mint Internet Made NFT on <a href='www.internetmadenft.com'>www.internetmadenft.com</a> website. When you click the mint button you will be redirected to our minting subpage. If you have our whitelist role, you will need to whitelist your eth wallet (such as MetaMask) address, only then you are able to participate in the presale. Public sale will be open to everyone."
+        "question": "How do I mint an IM NFT?",
+        "answer": "You will be able to mint an Internet Made NFT on <a href='/'>www.internetmadenft.com</a> website. When you click the mint button you will be redirected to our minting subpage. If you have our whitelist role, you will need to whitelist your Ethereum erc20 wallet (such as MetaMask) address, only then you are able to participate in the presale. Public sale will be open to everyone.<br><br>We are constantly listening to our community and adjusting our roadmap to best serve all of our IM NFT holders. Our vision continues to evolve based on the input of our ecosystem, and in the future we'll have staking and DAO infrastructure available for our NFT holders."
     },
     {
         "id": 1,
