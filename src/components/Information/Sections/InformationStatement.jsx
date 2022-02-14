@@ -10,15 +10,6 @@ export default function(){
     return (
         <div className='information-statement'>
            <div className="container information__container">
-                <div className="information-statement__image">
-                    <InformationImage 
-                        avatar={avatar}
-                        backgroundImage={background}
-                        colors={{
-                            backBlur: "rgba(26, 30, 50, 0.2)"
-                        }}
-                    />
-                </div>
                 <div className="information-statement__content">
                     <h2 className="information__title information-statement__title">The Statement</h2>
                     <NumberScreen 
@@ -40,6 +31,15 @@ export default function(){
                         Exude artistry and confidence with The Statement 
                         Collection.
                     </p>
+                </div>
+                <div className="information-statement__image">
+                    <InformationImage 
+                        avatar={avatar}
+                        backgroundImage={background}
+                        colors={{
+                            backBlur: "rgba(26, 30, 50, 0.2)"
+                        }}
+                    />
                 </div>
            </div>
         </div>
