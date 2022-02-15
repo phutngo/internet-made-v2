@@ -20,10 +20,9 @@ export default function(){
                 <div className="xoxo__content">
                     <h2>Our Vision</h2>
                     <p className='big'>
-                        Internet Made is more than a collection: we’re a movement bringing the 
-                        fashion house to the digital world. We’re an artificial fashion atelier 
-                        bringing our community into our vision and future creative development. 
-                        Our designs evolve with the changing landscape of innovation.
+                        INTERNET MADE IS BOTH A BRAND AND A MOVEMENT BRINGING ARTISTS, CREATORS, 
+                        AND FASHION DESIGNERS TOGETHER TO USE TECHNOLOGY TO EXPRESS THEMSELVES 
+                        IN A NEW WAY.
                     </p>
                     <p className="small">
                         Internet Made is a brand and a movement bringing artists, creators, and fashion 

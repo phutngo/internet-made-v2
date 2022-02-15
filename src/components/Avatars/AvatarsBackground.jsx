@@ -5,16 +5,20 @@ import { useState } from 'react';
 import './avatarsbackground.scss';
 
 // Images
+import card1 from '@root/assets/images/avatars/card-01.png';
 import card2 from '@root/assets/images/avatars/card-02.png';
 import card3 from '@root/assets/images/avatars/card-03.png';
 import card4 from '@root/assets/images/avatars/card-04.png';
 import card5 from '@root/assets/images/avatars/card-05.png';
 import card6 from '@root/assets/images/avatars/card-06.png';
+import card7 from '@root/assets/images/avatars/card-07.png';
+import card1Webp from '@root/assets/images/avatars/card-01.webp';
 import card2Webp from '@root/assets/images/avatars/card-02.webp';
 import card3Webp from '@root/assets/images/avatars/card-03.webp';
 import card4Webp from '@root/assets/images/avatars/card-04.webp';
 import card5Webp from '@root/assets/images/avatars/card-05.webp';
 import card6Webp from '@root/assets/images/avatars/card-06.webp';
+import card7Webp from '@root/assets/images/avatars/card-07.webp';
 
 export default function(){
     const [animation, setAnimation] = useState(null);
@@ -84,8 +88,8 @@ export default function(){
                             <React.Fragment key={id}>
                                 <div className="avatarsback__item">
                                     <picture>
-                                        <source srcSet={card3Webp} type="image/webp" />
-                                        <img src={card3} alt="card" className="avatarsback__card-img"/>
+                                        <source srcSet={card1Webp} type="image/webp" />
+                                        <img src={card1} alt="card" className="avatarsback__card-img"/>
                                     </picture>
                                 </div>
                                 <div className="avatarsback__item">
@@ -96,14 +100,14 @@ export default function(){
                                 </div>
                                 <div className="avatarsback__item">
                                     <picture>
-                                        <source srcSet={card4Webp} type="image/webp" />
-                                        <img src={card4} alt="card" className="avatarsback__card-img"/>
+                                        <source srcSet={card3Webp} type="image/webp" />
+                                        <img src={card3} alt="card" className="avatarsback__card-img"/>
                                     </picture>
                                 </div>
                                 <div className="avatarsback__item">
                                     <picture>
-                                        <source srcSet={card3Webp} type="image/webp" />
-                                        <img src={card3} alt="card" className="avatarsback__card-img"/>
+                                        <source srcSet={card4Webp} type="image/webp" />
+                                        <img src={card4} alt="card" className="avatarsback__card-img"/>
                                     </picture>
                                 </div>
                                 <div className="avatarsback__item">
@@ -116,6 +120,12 @@ export default function(){
                                     <picture>
                                         <source srcSet={card6Webp} type="image/webp" />
                                         <img src={card6} alt="card" className="avatarsback__card-img"/>
+                                    </picture>
+                                </div>
+                                <div className="avatarsback__item">
+                                    <picture>
+                                        <source srcSet={card7Webp} type="image/webp" />
+                                        <img src={card7} alt="card" className="avatarsback__card-img"/>
                                     </picture>
                                 </div>
                             </React.Fragment>

@@ -131,7 +131,7 @@
         "description": "3D artist, lowkey a Blender fanboy. Playing with 1's and 0's since 2016.",
         "socials": {
             "twitter": null,
-            "instagram": null,
+            "instagram": "https://www.instagram.com/kristian.v.i/",
             "linkedIn": null
         },
         "color": {
@@ -205,6 +205,26 @@
             "webp": "/assets/images/team/avatar-04.webp"
         },
         "realImage": null,
+        "name": "Zach Bleach",
+        "title": "Marketing",
+        "description": "Son of adam. 3D animations artist. ",
+        "socials": {
+            "twitter": null,
+            "instagram": "https://www.instagram.com/z_bleach/",
+            "linkedIn": null
+        },
+        "color": {
+            "background": "#BD3636",
+            "avatar": "#841515"
+        }
+    },
+    {
+        "id": 11,
+        "avatar": {
+            "png": "/assets/images/team/avatar-04.png",
+            "webp": "/assets/images/team/avatar-04.webp"
+        },
+        "realImage": null,
         "name": "FRISCOQ.ETH",
         "title": "Marketing",
         "description": "Community Lead for <a href='https://twitter.com/mv3nft'>@mv3nft</a> and <a href='https://twitter.com/themetav3rse'>@themetav3rse</a> | Advisor Sutra Nation",
@@ -219,7 +239,7 @@
         }
     },
     {
-        "id": 11,
+        "id": 12,
         "avatar": {
             "png": "/assets/images/team/avatar-04.png",
             "webp": "/assets/images/team/avatar-04.webp"
@@ -239,7 +259,7 @@
         }
     },
     {
-        "id": 12,
+        "id": 13,
         "avatar": {
             "png": "/assets/images/team/avatar-04.png",
             "webp": "/assets/images/team/avatar-04.webp"
@@ -259,7 +279,7 @@
         }
     },
     {
-        "id": 13,
+        "id": 14,
         "avatar": {
             "png": "/assets/images/team/avatar-04.png",
             "webp": "/assets/images/team/avatar-04.webp"
@@ -279,13 +299,13 @@
         }
     },   
     {
-        "id": 14,
+        "id": 15,
         "avatar": {
             "png": "/assets/images/team/avatar-04.png",
             "webp": "/assets/images/team/avatar-04.webp"
         },
         "realImage": null,
-        "name": "Luc Primožičnik",
+        "name": "LUC SEMPRIMOZNIK",
         "title": "Marketing",
         "description": "Sport athlete doing digital marketing. Bought bitcoin in 2017 for the first time at 20k.",
         "socials": {
@@ -299,7 +319,7 @@
         }
     }, 
     {
-        "id": 15,
+        "id": 16,
         "avatar": {
             "png": "/assets/images/team/avatar-05.png",
             "webp": "/assets/images/team/avatar-05.webp"
@@ -319,7 +339,7 @@
         }
     },
     {
-        "id": 16,
+        "id": 17,
         "avatar": {
             "png": "/assets/images/team/avatar-05.png",
             "webp": "/assets/images/team/avatar-05.webp"
@@ -339,7 +359,7 @@
         }
     },
     {
-        "id": 17,
+        "id": 18,
         "avatar": {
             "png": "/assets/images/team/avatar-06.png",
             "webp": "/assets/images/team/avatar-06.webp"
@@ -360,7 +380,7 @@
         }
     },    
     {
-        "id": 18,
+        "id": 19,
         "avatar": {
             "png": "/assets/images/team/avatar-07.png",
             "webp": "/assets/images/team/avatar-07.webp"
@@ -377,26 +397,6 @@
         "color": {
             "background": "#176e29",
             "avatar": "#083e13"
-        }
-    },
-    {
-        "id": 19,
-        "avatar": {
-            "png": "/assets/images/team/avatar-08.png",
-            "webp": "/assets/images/team/avatar-08.webp"
-        },
-        "realImage": null,
-        "name": "Terah Mills",
-        "title": "Discord Team",
-        "description": null,
-        "socials": {
-            "twitter": null,
-            "instagram": null,
-            "linkedIn": null
-        },
-        "color": {
-            "background": "rgb(201 86 86)",
-            "avatar": "rgb(139 53 53)"
         }
     },
     {
@@ -426,7 +426,7 @@
             "webp": "/assets/images/team/avatar-08.webp"
         },
         "realImage": null,
-        "name": "Badam",
+        "name": "Terah Mills",
         "title": "Moderator",
         "description": null,
         "socials": {
@@ -446,7 +446,7 @@
             "webp": "/assets/images/team/avatar-08.webp"
         },
         "realImage": null,
-        "name": "Luicville",
+        "name": "Anaximillian",
         "title": "Moderator",
         "description": null,
         "socials": {
@@ -466,7 +466,7 @@
             "webp": "/assets/images/team/avatar-08.webp"
         },
         "realImage": null,
-        "name": "Anaximillian",
+        "name": "Blue Penguin",
         "title": "Moderator",
         "description": null,
         "socials": {
@@ -486,7 +486,7 @@
             "webp": "/assets/images/team/avatar-08.webp"
         },
         "realImage": null,
-        "name": "Kermis",
+        "name": "BluRibz",
         "title": "Moderator",
         "description": null,
         "socials": {
@@ -506,7 +506,7 @@
             "webp": "/assets/images/team/avatar-08.webp"
         },
         "realImage": null,
-        "name": "Anaximillian",
+        "name": "FrenchBoy",
         "title": "Moderator",
         "description": null,
         "socials": {
@@ -526,7 +526,7 @@
             "webp": "/assets/images/team/avatar-08.webp"
         },
         "realImage": null,
-        "name": "Luicville",
+        "name": "Badam",
         "title": "Moderator",
         "description": null,
         "socials": {
@@ -546,7 +546,7 @@
             "webp": "/assets/images/team/avatar-08.webp"
         },
         "realImage": null,
-        "name": "Badam",
+        "name": "Frannie",
         "title": "Moderator",
         "description": null,
         "socials": {
@@ -566,7 +566,7 @@
             "webp": "/assets/images/team/avatar-08.webp"
         },
         "realImage": null,
-        "name": "Jocey.eth",
+        "name": "Luiville10.eth",
         "title": "Moderator",
         "description": null,
         "socials": {
@@ -586,7 +586,67 @@
             "webp": "/assets/images/team/avatar-08.webp"
         },
         "realImage": null,
-        "name": "French Boy",
+        "name": "Jocey.eth",
+        "title": "Moderator",
+        "description": null,
+        "socials": {
+            "twitter": null,
+            "instagram": null,
+            "linkedIn": null
+        },
+        "color": {
+            "background": "rgb(201 86 86)",
+            "avatar": "rgb(139 53 53)"
+        }
+    },
+    {
+        "id": 30,
+        "avatar": {
+            "png": "/assets/images/team/avatar-08.png",
+            "webp": "/assets/images/team/avatar-08.webp"
+        },
+        "realImage": null,
+        "name": "Kermis",
+        "title": "Moderator",
+        "description": null,
+        "socials": {
+            "twitter": null,
+            "instagram": null,
+            "linkedIn": null
+        },
+        "color": {
+            "background": "rgb(201 86 86)",
+            "avatar": "rgb(139 53 53)"
+        }
+    },
+    {
+        "id": 31,
+        "avatar": {
+            "png": "/assets/images/team/avatar-08.png",
+            "webp": "/assets/images/team/avatar-08.webp"
+        },
+        "realImage": null,
+        "name": "Maxime",
+        "title": "Moderator",
+        "description": null,
+        "socials": {
+            "twitter": null,
+            "instagram": null,
+            "linkedIn": null
+        },
+        "color": {
+            "background": "rgb(201 86 86)",
+            "avatar": "rgb(139 53 53)"
+        }
+    },
+    {
+        "id": 32,
+        "avatar": {
+            "png": "/assets/images/team/avatar-08.png",
+            "webp": "/assets/images/team/avatar-08.webp"
+        },
+        "realImage": null,
+        "name": "Tajh",
         "title": "Moderator",
         "description": null,
         "socials": {

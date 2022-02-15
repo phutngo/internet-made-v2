@@ -5,9 +5,6 @@ import "./invite.scss"
 import personaje01 from '@root/assets/images/invite/personaje-01.png';
 import personaje02 from '@root/assets/images/invite/personaje-02.png';
 import personaje03 from '@root/assets/images/invite/personaje-03.png';
-import personaje01Webp from '@root/assets/images/invite/personaje-01.webp';
-import personaje02Webp from '@root/assets/images/invite/personaje-02.webp';
-import personaje03Webp from '@root/assets/images/invite/personaje-03.webp';
 import rhombus from '@root/assets/images/invite/rhombus.png';
 import corner from '@root/assets/images/invite/corner.png';
 import discord from '@root/assets/images/invite/discord.png';
@@ -31,8 +28,11 @@ export default function(){
                             <div className="invite__left">
                                 <h1>Join Our Discord</h1>
                                 <PlusButton className="invite__btn" href="https://discord.gg/mUtyPpSHhh" target="_blank">
-                                    <span>Discord</span>
-                                    <img src={discord} alt="discord" />
+                                    <p className='hide'>
+                                        <span>Discord</span>
+                                        <img src={discord} alt="discord" />
+                                    </p>
+                                    <p className="show"><span>Closed</span></p>
                                 </PlusButton>
                             </div>
                             <div className="invite__right">

@@ -15,6 +15,11 @@
         padding: 50px 0 55px;
     }
 }
+.release__item{
+    + .release__item{
+        margin-top: 50px;
+    }
+}
 .release__suptitle{
     @include monument(400){
         font-size: 37.2647px;
