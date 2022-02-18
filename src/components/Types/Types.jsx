@@ -119,32 +119,14 @@ export default function(){
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type02Webp} type="image/webp" />
-                            <img src={type02} alt="type-img" />
-                        </picture>
-                    </div>
-                    <div className="types__item">
-                        <picture>
                             <source srcSet={type03Webp} type="image/webp" />
                             <img src={type03} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type04Webp} type="image/webp" />
-                            <img src={type04} alt="type-img" />
-                        </picture>
-                    </div>
-                    <div className="types__item">
-                        <picture>
                             <source srcSet={type05Webp} type="image/webp" />
                             <img src={type05} alt="type-img" />
-                        </picture>
-                    </div>
-                    <div className="types__item">
-                        <picture>
-                            <source srcSet={type06Webp} type="image/webp" />
-                            <img src={type06} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
@@ -161,18 +143,36 @@ export default function(){
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type09Webp} type="image/webp" />
-                            <img src={type09} alt="type-img" />
+                            <source srcSet={type01Webp} type="image/webp" />
+                            <img src={type01} alt="type-img" />
+                        </picture>
+                    </div>
+                    <div className="types__item">
+                        <picture>
+                            <source srcSet={type03Webp} type="image/webp" />
+                            <img src={type03} alt="type-img" />
+                        </picture>
+                    </div>
+                    <div className="types__item">
+                        <picture>
+                            <source srcSet={type05Webp} type="image/webp" />
+                            <img src={type05} alt="type-img" />
+                        </picture>
+                    </div>
+                    <div className="types__item">
+                        <picture>
+                            <source srcSet={type07Webp} type="image/webp" />
+                            <img src={type07} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item min">
                         <picture>
-                            <source srcSet={type10Webp} type="image/webp" />
-                            <img src={type10} alt="type-img" />
+                            <source srcSet={type09Webp} type="image/webp" />
+                            <img src={type09} alt="type-img" />
                         </picture>
                     </div>
                 </div>
-                <div className="types__row" ref={setRefRowDown}>    
+                <div className="types__row" ref={setRefRowDown}> 
                     <div className="types__item min">
                         <picture>
                             <source srcSet={type01Webp} type="image/webp" />
@@ -181,32 +181,14 @@ export default function(){
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type02Webp} type="image/webp" />
-                            <img src={type02} alt="type-img" />
-                        </picture>
-                    </div>
-                    <div className="types__item">
-                        <picture>
                             <source srcSet={type03Webp} type="image/webp" />
                             <img src={type03} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type04Webp} type="image/webp" />
-                            <img src={type04} alt="type-img" />
-                        </picture>
-                    </div>
-                    <div className="types__item">
-                        <picture>
                             <source srcSet={type05Webp} type="image/webp" />
                             <img src={type05} alt="type-img" />
-                        </picture>
-                    </div>
-                    <div className="types__item">
-                        <picture>
-                            <source srcSet={type06Webp} type="image/webp" />
-                            <img src={type06} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item">
@@ -223,14 +205,32 @@ export default function(){
                     </div>
                     <div className="types__item">
                         <picture>
-                            <source srcSet={type09Webp} type="image/webp" />
-                            <img src={type09} alt="type-img" />
+                            <source srcSet={type01Webp} type="image/webp" />
+                            <img src={type01} alt="type-img" />
+                        </picture>
+                    </div>
+                    <div className="types__item">
+                        <picture>
+                            <source srcSet={type03Webp} type="image/webp" />
+                            <img src={type03} alt="type-img" />
+                        </picture>
+                    </div>
+                    <div className="types__item">
+                        <picture>
+                            <source srcSet={type05Webp} type="image/webp" />
+                            <img src={type05} alt="type-img" />
+                        </picture>
+                    </div>
+                    <div className="types__item">
+                        <picture>
+                            <source srcSet={type07Webp} type="image/webp" />
+                            <img src={type07} alt="type-img" />
                         </picture>
                     </div>
                     <div className="types__item min">
                         <picture>
-                            <source srcSet={type10Webp} type="image/webp" />
-                            <img src={type10} alt="type-img" />
+                            <source srcSet={type09Webp} type="image/webp" />
+                            <img src={type09} alt="type-img" />
                         </picture>
                     </div>
                 </div>
