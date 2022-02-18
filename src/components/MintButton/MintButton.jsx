@@ -7,9 +7,10 @@ export default function({ className }){
         <PlusButton 
             className={className}
             onClick={console.log.bind(null)}
+            href="https://mint.internetmadenft.com"
+            target="_blank"
         >
-            <span className='hide'>Mint</span>
-            <span className='show'>Soon</span>     
+            <span>Mint</span>  
         </PlusButton>
     );
 }

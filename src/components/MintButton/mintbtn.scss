@@ -27,24 +27,6 @@
         }
     }
 
-    &:hover{
-        background: #666666;
-
-        span.hide{
-            transform: scale(0.1);
-            opacity: 0;
-        }
-        span.show{
-            transform: translate(-50%, -50%) scale(1);
-        }
-        i{
-            &::after,
-            &::before{ 
-                background: #fff;
-            }
-        }
-    }
-
     @media (max-width: 768px){     
         &:not(.hero__mint_mobile){
             display: none;
