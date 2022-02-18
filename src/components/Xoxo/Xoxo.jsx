@@ -24,10 +24,6 @@ export default function(){
                         AND FASHION DESIGNERS TOGETHER TO USE TECHNOLOGY TO EXPRESS THEMSELVES 
                         IN A NEW WAY.
                     </p>
-                    <p className="small">
-                        Internet Made is a brand and a movement bringing artists, creators, and fashion 
-                        designers together to use technology to express themselves in a new way
-                    </p>
                 </div>
             </div>
         </section>
