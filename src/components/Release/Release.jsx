@@ -5,7 +5,7 @@ export default function(){
     return (
         <section className='release'>
             <div className="release__item">
-                <h3 className="release__suptitle">RELEASE DATE:</h3>
+                <h3 className="release__suptitle">Presale DATE:</h3>
                 <h2 className="release__title">25/2/22</h2>
             </div>
             <div className="release__item">
